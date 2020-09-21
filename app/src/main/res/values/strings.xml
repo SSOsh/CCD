@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CCD</string>
+    <string name="default_input">내용을 입력하세요</string>
+    <string name="default_button">보내기</string>
 </resources>
