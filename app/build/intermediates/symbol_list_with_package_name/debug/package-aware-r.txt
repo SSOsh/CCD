@@ -906,6 +906,7 @@ id blocking
 id bottom
 id bounce
 id button
+id button2
 id buttonPanel
 id center
 id center_vertical
@@ -962,6 +963,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id imageView5
 id info
 id invisible
@@ -1002,6 +1004,8 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
+id recyclerView2
 id reverseSawtooth
 id right
 id right_icon
@@ -1045,6 +1049,7 @@ id staticPostLayout
 id stop
 id submenuarrow
 id submit_area
+id switch1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -1059,6 +1064,9 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
+id textView2
+id textView3
+id textView4
 id time
 id title
 id titleDividerNoCustom
@@ -1119,6 +1127,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout custom_dialog
+layout like_main
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -1126,6 +1135,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout output
+layout output_like
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
