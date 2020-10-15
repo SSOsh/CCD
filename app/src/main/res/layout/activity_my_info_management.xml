@@ -37,15 +37,14 @@
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
         android:text="성명 : "
         android:textSize="23dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.23" />
 
     <TextView
         android:id="@+id/memberIdText"
@@ -76,7 +75,7 @@
         app:layout_constraintVertical_bias="0.422" />
 
     <TextView
-        android:id="@+id/nickname"
+        android:id="@+id/nicknameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="닉네임 : "
@@ -90,7 +89,7 @@
         app:layout_constraintVertical_bias="0.524" />
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/emailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="이메일 : "
@@ -130,4 +129,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.822" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="203dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toEndOf="@+id/nameText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
 </androidx.constraintlayout.widget.ConstraintLayout>
