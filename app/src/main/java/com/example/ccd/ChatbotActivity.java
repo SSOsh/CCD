@@ -35,10 +35,10 @@ public class ChatbotActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatbot);
 
-        home = findViewById(R.id.home);
-        bookList = findViewById(R.id.bookList);
-        chatbot = findViewById(R.id.chatbot);
-        mypage = findViewById(R.id.mypage);
+//        home = findViewById(R.id.home);
+//        bookList = findViewById(R.id.bookList);
+//        chatbot = findViewById(R.id.chatbot);
+//        mypage = findViewById(R.id.mypage);
         editText = findViewById(R.id.editText);
         outputpart = findViewById(R.id.outputpart);
 
@@ -48,39 +48,39 @@ public class ChatbotActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "홈", Toast.LENGTH_SHORT).show();
             }
         });
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "홈", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getApplicationContext(), "홈", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
-        bookList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "도서목록", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        chatbot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "챗봇", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        mypage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "내정보", Toast.LENGTH_SHORT).show();
-            // URL 설정.
-            String url = "http://localhost:8080/";
-
-            // AsyncTask를 통해 HttpURLConnection 수행.
-            NetworkTask networkTask = new NetworkTask(url, null);
-            networkTask.execute();
-            }
-        });
+//        bookList.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getApplicationContext(), "도서목록", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
+//        chatbot.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getApplicationContext(), "챗봇", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
+//        mypage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getApplicationContext(), "내정보", Toast.LENGTH_SHORT).show();
+//            // URL 설정.
+//            String url = "http://localhost:8080/";
+//
+//            // AsyncTask를 통해 HttpURLConnection 수행.
+//            NetworkTask networkTask = new NetworkTask(url, null);
+//            networkTask.execute();
+//            }
+//        });
     }
 
     public class NetworkTask extends AsyncTask<Void, Void, Void> {

@@ -1,98 +1,98 @@
 [
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_off.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\like_off.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_like.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_like.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_like_main.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\like_main.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_output.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\output.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_on.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\like_on.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_output_like.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\output_like.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_on.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\like_on.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_like.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_like.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_output.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\output.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_output_like.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\output_like.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_off.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\like_off.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_my_info_management.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_my_info_management.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chatbot.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_chatbot.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_top_activity.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\top_activity.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chatbot.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_chatbot.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_like_main.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\like_main.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_top_activity.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\top_activity.xml"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_my_info_management.xml.flat",
+        "source": "C:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_my_info_management.xml"
     }
 ]
