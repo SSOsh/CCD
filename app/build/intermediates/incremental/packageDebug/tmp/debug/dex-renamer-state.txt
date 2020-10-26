@@ -1,7 +1,7 @@
-#Sun Oct 25 01:23:19 KST 2020
-base.0=C\:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Tue Oct 27 04:00:13 KST 2020
+base.0=C\:\\GitHub\\ccd\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\snuff\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=C\:\\GitHub\\ccd\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
