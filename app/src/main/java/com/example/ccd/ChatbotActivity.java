@@ -23,10 +23,6 @@ import java.net.ProtocolException;
 import java.net.URL;
 
 public class ChatbotActivity extends AppCompatActivity {
-    Button home;
-    Button bookList;
-    Button chatbot;
-    Button mypage;
     EditText editText;
     TextView outputpart;
 
@@ -35,41 +31,10 @@ public class ChatbotActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatbot);
 
-        home = findViewById(R.id.home);
-        bookList = findViewById(R.id.bookList);
-        chatbot = findViewById(R.id.chatbot);
-        mypage = findViewById(R.id.mypage);
         editText = findViewById(R.id.editText);
         outputpart = findViewById(R.id.outputpart);
 
         outputpart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "홈", Toast.LENGTH_SHORT).show();
-            }
-        });
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "홈", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        bookList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "도서목록", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        chatbot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "챗봇", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        mypage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "내정보", Toast.LENGTH_SHORT).show();
@@ -94,7 +59,7 @@ public class ChatbotActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            strUrl = "http://m.naver.com"; //탐색하고 싶은 URL이다.
+            strUrl = "http://localhost:8080/"; //탐색하고 싶은 URL이다.
         }
 
         @Override

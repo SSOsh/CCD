@@ -905,7 +905,6 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id blocking
-id bookList
 id book_image
 id book_name
 id bottom
@@ -917,7 +916,6 @@ id center
 id center_vertical
 id chain
 id chains
-id chatbot
 id checkbox
 id checked
 id chronometer
@@ -992,7 +990,6 @@ id middle
 id modifyBtn
 id motion_base
 id multiply
-id mypage
 id nameText
 id never
 id nickname
