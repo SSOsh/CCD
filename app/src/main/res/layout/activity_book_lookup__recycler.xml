@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".bookLookup_Recycler">
+    android:layout_height="160dp"
+    android:paddingTop="10dp">
 
     <View
         android:id="@+id/divisionLine"
@@ -28,7 +28,7 @@
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049"
+        app:layout_constraintVertical_bias="0.285"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
@@ -42,7 +42,7 @@
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/bookCoverImg"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.613" />
 
     <TextView
         android:id="@+id/bookTitle"
@@ -56,7 +56,7 @@
         app:layout_constraintHorizontal_bias="0.204"
         app:layout_constraintStart_toEndOf="@+id/bookCoverImg"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.202" />
 
     <TextView
         android:id="@+id/author"
@@ -69,6 +69,19 @@
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toEndOf="@+id/bookCoverImg"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.414" />
+
+    <Button
+        android:id="@+id/goBookInfoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="도서정보"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,8 +11,8 @@ public class Data {
     public String getStarRating() {return starRating;}
     public int getBookCoverImg() {return bookCoverImg;}
 
-    public void setBookTitle(String bookTitle) {bookTitle = bookTitle;}
-    public void setAuthor(String author) {author = author;}
-    public void setStarRating(String starRating) {starRating = starRating;}
-    public void setBookCoverImg(int bookCoverImg) {bookCoverImg = bookCoverImg;}
+    public void setBookTitle(String bookTitle) {this.bookTitle = bookTitle;}
+    public void setAuthor(String author) {this.author = author;}
+    public void setStarRating(String starRating) {this.starRating = starRating;}
+    public void setBookCoverImg(int bookCoverImg) {this.bookCoverImg = bookCoverImg;}
 }
