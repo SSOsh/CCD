@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable_giraffe.jpg.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\giraffe.jpg"
+    },
+    {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
@@ -16,6 +20,10 @@
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable_third.jpg.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\third.jpg"
+    },
+    {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -28,6 +36,10 @@
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_lookup.xml.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_book_lookup.xml"
+    },
+    {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_output_like.xml.flat",
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\output_like.xml"
     },
@@ -36,8 +48,16 @@
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\like_on.xml"
     },
     {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bestseller_lookup.xml.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_bestseller_lookup.xml"
+    },
+    {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_bestseller_output.xml.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\bestseller_output.xml"
     },
     {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -56,6 +76,10 @@
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\like_off.xml"
     },
     {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_information.xml.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_book_information.xml"
+    },
+    {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_my_info_management.xml.flat",
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_my_info_management.xml"
     },
@@ -68,12 +92,28 @@
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_lookup__recycler.xml.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_book_lookup__recycler.xml"
+    },
+    {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chatbot.xml.flat",
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_chatbot.xml"
     },
     {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_top_activity.xml.flat",
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\top_activity.xml"
+    },
+    {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back.xml.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\back.xml"
+    },
+    {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_bestseller_lookup.xml.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\bestseller_lookup.xml"
+    },
+    {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable_namiya.jpg.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\namiya.jpg"
     },
     {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
