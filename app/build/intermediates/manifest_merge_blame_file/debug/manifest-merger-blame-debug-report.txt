@@ -32,9 +32,9 @@
 22        <activity android:name="com.example.ccd.bookInformation" />
 22-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:12:9-62
 22-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:12:19-50
-23        <activity android:name="com.example.ccd.bookLookup_Recycler" /> <!-- <activity android:name=".bookLookup" /> -->
-23-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:13:9-57
-23-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:13:19-54
+23        <activity android:name="com.example.ccd.WordListAdapter" /> <!-- <activity android:name=".bookLookup" /> -->
+23-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:13:9-53
+23-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:13:19-50
 24        <activity android:name="com.example.ccd.bestsellerLookup" /> <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
 24-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:14:9-54
 24-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:14:19-51

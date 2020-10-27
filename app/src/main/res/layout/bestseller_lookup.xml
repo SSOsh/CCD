@@ -88,10 +88,10 @@
             android:id="@+id/button22"
             android:layout_width="87dp"
             android:layout_height="30dp"
-            android:layout_marginStart="128dp"
+            android:layout_marginStart="144dp"
             android:layout_marginTop="24dp"
             android:background="#CB080808"
-            android:text="수정"
+            android:text="검색"
             android:textColor="#FFFFFF"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText11" />
