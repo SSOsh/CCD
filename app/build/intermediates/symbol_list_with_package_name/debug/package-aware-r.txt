@@ -814,6 +814,8 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable like_off
 drawable like_on
+drawable like_toggle
+drawable like_toggle_bg
 drawable namiya
 drawable notification_action_background
 drawable notification_bg
@@ -937,6 +939,7 @@ id checkbox
 id checked
 id chronometer
 id collapseActionView
+id constraintLayout
 id content
 id contentPanel
 id cos
