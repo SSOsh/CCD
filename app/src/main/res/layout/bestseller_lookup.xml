@@ -9,16 +9,17 @@
     <TextView
         android:id="@+id/textView40"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="18dp"
         android:text="베스트셀러"
         android:textColor="#080808"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="380dp"
         android:layout_height="186dp"
         android:layout_marginStart="5dp"
@@ -87,10 +88,10 @@
             android:id="@+id/button22"
             android:layout_width="87dp"
             android:layout_height="30dp"
-            android:layout_marginStart="128dp"
+            android:layout_marginStart="144dp"
             android:layout_marginTop="24dp"
             android:background="#CB080808"
-            android:text="수정"
+            android:text="검색"
             android:textColor="#FFFFFF"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText11" />
@@ -98,11 +99,14 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="411dp"
-        android:layout_height="401dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="412dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".bookInformation"></activity>
-        <activity android:name=".bookLookup_Recycler" /> <!-- <activity android:name=".bookLookup" /> -->
+        <activity android:name=".WordListAdapter" /> <!-- <activity android:name=".bookLookup" /> -->
         <activity android:name=".bestsellerLookup" /> <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
 <!--        <activity android:name=".MainActivity">-->
 <!--            <intent-filter>-->
