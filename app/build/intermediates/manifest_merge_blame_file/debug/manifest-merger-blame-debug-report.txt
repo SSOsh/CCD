@@ -11,7 +11,7 @@
 9-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:5:5-29:19
+11-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:5:5-41:19
 12        android:allowBackup="true"
 12-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -35,34 +35,50 @@
 23        <activity android:name="com.example.ccd.WordListAdapter" /> <!-- <activity android:name=".bookLookup" /> -->
 23-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:13:9-53
 23-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:13:19-50
-24        <activity android:name="com.example.ccd.bestsellerLookup" /> <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
-24-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:14:9-54
+24        <activity android:name="com.example.ccd.bestsellerLookup" >
+24-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:14:9-19:20
 24-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:14:19-51
-25        <!-- <activity android:name=".MainActivity"> -->
-26        <!-- <intent-filter> -->
-27        <!-- <action android:name="android.intent.action.MAIN" /> -->
-28
-29
-30        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-31        <!-- </intent-filter> -->
-32        <!-- </activity> -->
-33        <activity android:name="com.example.ccd.bookLookup" >
-33-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:22:10-27:21
-33-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:22:20-46
-34            <intent-filter>
-34-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:23:10-26:26
-35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:24:10-62
-35-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:24:18-59
+25
+26            <!-- <intent-filter> -->
+27            <!-- <action android:name="android.intent.action.MAIN" /> -->
+28            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+29            <!-- </intent-filter> -->
+30        </activity>
+31        <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
+32        <!-- <activity android:name=".MainActivity"> -->
+33        <!-- <intent-filter> -->
+34        <!-- <action android:name="android.intent.action.MAIN" /> -->
+35
 36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:25:10-70
-37-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:25:20-67
-38            </intent-filter>
-39        </activity>
-40        <activity android:name="com.example.ccd.MyInfoManagement" />
-40-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:28:9-54
-40-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:28:19-51
-41    </application>
-42
-43</manifest>
+37        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+38        <!-- </intent-filter> -->
+39        <!-- </activity> -->
+40        <activity android:name="com.example.ccd.bookLookup" >
+40-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:28:10-33:21
+40-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:28:20-46
+41
+42            <!-- <intent-filter> -->
+43            <!-- <action android:name="android.intent.action.MAIN" /> -->
+44            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+45            <!-- </intent-filter> -->
+46        </activity>
+47        <activity android:name="com.example.ccd.MyInfoManagement" />
+47-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:34:9-54
+47-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:34:19-51
+48        <activity android:name="com.example.ccd.LikeActivity" >
+48-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:35:9-40:20
+48-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:35:19-47
+49            <intent-filter>
+49-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:36:13-39:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:37:17-69
+50-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:37:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:38:17-77
+52-->C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:38:27-74
+53            </intent-filter>
+54        </activity>
+55    </application>
+56
+57</manifest>

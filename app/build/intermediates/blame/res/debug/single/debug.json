@@ -20,10 +20,6 @@
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\giraffe.jpg"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_bestseller_lookup.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\bestseller_lookup.xml"
-    },
-    {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -50,10 +46,6 @@
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_information.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_book_information.xml"
-    },
-    {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_output.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\output.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",

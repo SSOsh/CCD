@@ -22,7 +22,14 @@
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.ccd.bookInformation" />
         <activity android:name="com.example.ccd.WordListAdapter" /> <!-- <activity android:name=".bookLookup" /> -->
-        <activity android:name="com.example.ccd.bestsellerLookup" /> <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
+        <activity android:name="com.example.ccd.bestsellerLookup" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
         <!-- <activity android:name=".MainActivity"> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -32,13 +39,20 @@
         <!-- </intent-filter> -->
         <!-- </activity> -->
         <activity android:name="com.example.ccd.bookLookup" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="com.example.ccd.MyInfoManagement" />
+        <activity android:name="com.example.ccd.LikeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.ccd.MyInfoManagement" />
     </application>
 
 </manifest>
