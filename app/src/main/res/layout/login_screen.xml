@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:background="#CB080808"
+        android:text="로그인"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="56dp"
+        android:background="#CB080808"
+        android:text="회원가입"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/button31"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="412dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="220dp"
+        android:background="#66BB6A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="52dp"
+            android:text="회원 ID :"
+            android:textColor="#FFEE58"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:text="비밀번호 :"
+            android:textColor="#FFEE58"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+        <EditText
+            android:id="@+id/editText13"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="52dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:text=" 내용을 입력해 주세요"
+            app:layout_constraintStart_toEndOf="@+id/textView52"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:text=" 내용을 입력해 주세요"
+            app:layout_constraintStart_toEndOf="@+id/textView53"
+            app:layout_constraintTop_toBottomOf="@+id/editText13" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

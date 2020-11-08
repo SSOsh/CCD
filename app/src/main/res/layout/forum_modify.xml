@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4AFFFFFF">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="379dp"
+        android:layout_height="353dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="240dp"
+        android:background="#F8E0F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F6CED8"
+                android:text="FORUM CONTAIN"
+                android:textColor="#080808"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/forumDeleteBtn"
+        android:layout_width="82dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:background="#CB080808"
+        android:text="삭제"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/forumModifyBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <Button
+        android:id="@+id/fListBtn"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        android:background="#CB080808"
+        android:text="목록"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <Button
+        android:id="@+id/forumModifyBtn"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:background="#CB080808"
+        android:text="수정"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:background="#F6CED8"
+        android:text="forum title"
+        android:textAllCaps="true"
+        android:textColor="#080808"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

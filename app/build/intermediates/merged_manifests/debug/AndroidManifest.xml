@@ -19,6 +19,32 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.ccd.book_done_lookup" />
+        <activity android:name="com.example.ccd.bookStatusProgressLookup" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.ccd.book_reading_lookup" />
+        <activity android:name="com.example.ccd.forumDisplay" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="com.example.ccd.forumModify" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="com.example.ccd.forumEnroll" />
         <activity android:name="com.example.ccd.bookInformation" />
         <activity android:name="com.example.ccd.WordListAdapter" /> <!-- <activity android:name=".bookLookup" /> -->
         <activity android:name="com.example.ccd.bestsellerLookup" >
@@ -27,13 +53,10 @@
             <!-- <action android:name="android.intent.action.MAIN" /> -->
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
-        </activity>
-        <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
+        </activity> <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
         <!-- <activity android:name=".MainActivity"> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
@@ -46,11 +69,11 @@
         </activity>
         <activity android:name="com.example.ccd.MyInfoManagement" />
         <activity android:name="com.example.ccd.LikeActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 

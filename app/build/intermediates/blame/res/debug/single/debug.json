@@ -8,16 +8,12 @@
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_my_info_management.xml"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forum_display.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_forum_display.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\back.xml"
-    },
-    {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_giraffe.jpg.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\giraffe.jpg"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -28,28 +24,128 @@
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\bestseller_output.xml"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_like.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_like.xml"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_like_main.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\like_main.xml"
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_done_lookup.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_book_done_lookup.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_lookup.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_book_lookup.xml"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_information.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_book_information.xml"
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_login_screen.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\login_screen.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_iconfinder_check.png.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\iconfinder_check.png"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_iconfinder_485_book_pen_food_education_4212930.png.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable-v24\\iconfinder_485_book_pen_food_education_4212930.png"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_booksp_lookup_recycle.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\booksp_lookup_recycle.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_comment_output.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\comment_output.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_lookup_video.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\lookup_video.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_test.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\test.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_forum_modify.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\forum_modify.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_notice_lookup.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\notice_lookup.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_comment_list.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\comment_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chatbot.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_chatbot.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_book_status_progress_lookup.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\book_status_progress_lookup.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_book_status_progress_enroll.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\book_status_progress_enroll.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bestseller_lookup.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_bestseller_lookup.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forum_enroll.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_forum_enroll.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_screen.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_book_done_recycle.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\book_done_recycle.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_notice_display.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\notice_display.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_giraffe.jpg.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\giraffe.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_book_status_progress_modify.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\book_status_progress_modify.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_like_main.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\like_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_information.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_book_information.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_book_ing_recycle.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\book_ing_recycle.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -76,6 +172,10 @@
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\third.jpg"
     },
     {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_sign_up.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\sign_up.xml"
+    },
+    {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
@@ -92,28 +192,16 @@
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\top_activity.xml"
     },
     {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_iconfinder_bookreading.png.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable-v24\\iconfinder_bookreading.png"
+    },
+    {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_toggle_bg.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\like_toggle_bg.xml"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chatbot.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_chatbot.xml"
-    },
-    {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bestseller_lookup.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_bestseller_lookup.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_on.xml.flat",
@@ -130,6 +218,10 @@
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_toggle.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\like_toggle.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_reading_lookup.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_book_reading_lookup.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",

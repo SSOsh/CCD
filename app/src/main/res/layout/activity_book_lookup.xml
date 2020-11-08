@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/activity_main"
+        layout="@layout/test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,10 +20,10 @@
         app:iconifiedByDefault="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintVertical_bias="0.225"
         app:queryHint="도서명 또는 저자를 입력하시오" />
 
     <TextView
@@ -37,15 +37,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recyclerV"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.905" />
+        app:layout_constraintVertical_bias="0.901" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerV"
-        android:layout_width="match_parent"
-        android:layout_height="522dp"
+        android:layout_width="419dp"
+        android:layout_height="454dp"
         android:paddingTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

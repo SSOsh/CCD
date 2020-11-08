@@ -9,34 +9,61 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".bookInformation"></activity>
-        <activity android:name=".WordListAdapter" /> <!-- <activity android:name=".bookLookup" /> -->
-        <activity android:name=".bestsellerLookup">
-<!--        <intent-filter>-->
-<!--            <action android:name="android.intent.action.MAIN" />-->
-<!--            <category android:name="android.intent.category.LAUNCHER" />-->
-<!--        </intent-filter>-->
-        </activity>
-        <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
-<!--        <activity android:name=".MainActivity">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity> -->
-         <activity android:name=".bookLookup">
-<!--        <intent-filter>-->
-<!--         <action android:name="android.intent.action.MAIN" />-->
-<!--         <category android:name="android.intent.category.LAUNCHER" />-->
-<!--         </intent-filter>-->
-         </activity>
-        <activity android:name=".MyInfoManagement" />
-        <activity android:name=".LikeActivity">
+        <activity android:name=".book_done_lookup"></activity>
+        <activity android:name=".bookStatusProgressLookup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".book_reading_lookup" />
+        <activity android:name=".forumDisplay">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".forumModify">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".forumEnroll" />
+        <activity android:name=".bookInformation" />
+        <activity android:name=".WordListAdapter" /> <!-- <activity android:name=".bookLookup" /> -->
+        <activity android:name=".bestsellerLookup">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity> <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
+        <!-- <activity android:name=".MainActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name=".bookLookup">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".MyInfoManagement" />
+        <activity android:name=".LikeActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 

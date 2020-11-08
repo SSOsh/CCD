@@ -118,14 +118,12 @@ public class bestsellerWordListAdapter extends RecyclerView.Adapter<bestsellerWo
             bsLike_toggle.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    //좋아요 선택되면 좋아요 페이지에 도서 추가, 취소되면 삭제
                 }
             });
 
             this.mAdapter = adapter;
         }
-
-
 
         void onBind(bestsellerData data) {
             bsTitle.setText(data.getBsTitle());

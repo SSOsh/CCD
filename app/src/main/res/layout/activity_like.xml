@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/activity_main"
+        layout="@layout/test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
