@@ -15,8 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class bookLookup extends AppCompatActivity {
-    EditText titleEdit, authorEdit;
-    Button searchButton;
+
     RecyclerView mRecyclerView;
     WordListAdapter mAdapter;
 
@@ -24,18 +23,7 @@ public class bookLookup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_lookup);
-
-        titleEdit = findViewById(R.id.titleEdit);
-        authorEdit = findViewById(R.id.authorEdit);
-        searchButton = findViewById(R.id.searchButton);
-
-        searchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
+        
         mRecyclerView = findViewById(R.id.recyclerV);
         mAdapter = new WordListAdapter(this);
         mRecyclerView.setAdapter(mAdapter);

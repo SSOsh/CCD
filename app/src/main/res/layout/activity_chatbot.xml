@@ -9,8 +9,7 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/activity_main"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        layout="@layout/test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,8 +36,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="406dp"
-        android:layout_height="0dp"
+        android:layout_width="411dp"
+        android:layout_height="464dp"
         android:layout_marginTop="155dp"
         android:background="@color/chatbotmainBackground"
         app:layout_constraintBottom_toTopOf="@+id/editText"
@@ -55,9 +54,9 @@
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.092" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
