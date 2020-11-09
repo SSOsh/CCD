@@ -50,6 +50,7 @@ public class bookInformation extends AppCompatActivity {
 
         //검색 시 값 출력
         Intent intent = getIntent();
+        String title = intent.getStringExtra("videoTitleText");
         String tValue = intent.getStringExtra("title");
         String aValue = intent.getStringExtra("author");
 

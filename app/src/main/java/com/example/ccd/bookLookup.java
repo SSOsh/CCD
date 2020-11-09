@@ -15,7 +15,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class bookLookup extends AppCompatActivity {
-
     RecyclerView mRecyclerView;
     WordListAdapter mAdapter;
 
@@ -23,6 +22,8 @@ public class bookLookup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_lookup);
+
+        Intent intent = getIntent();
         
         mRecyclerView = findViewById(R.id.recyclerV);
         mAdapter = new WordListAdapter(this);

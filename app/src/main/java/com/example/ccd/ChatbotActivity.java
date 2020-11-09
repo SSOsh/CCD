@@ -1,5 +1,6 @@
 package com.example.ccd;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,8 @@ public class ChatbotActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatbot);
+
+        Intent intent = getIntent();
 
         editText = findViewById(R.id.editText);
         outputpart = findViewById(R.id.outputpart);

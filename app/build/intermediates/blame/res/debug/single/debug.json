@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_namiya.jpg.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\namiya.jpg"
-    },
-    {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_my_info_management.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_my_info_management.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_namiya.jpg.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\namiya.jpg"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forum_display.xml.flat",
@@ -22,6 +22,10 @@
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_bestseller_output.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\bestseller_output.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_iconfinder_person.png.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\iconfinder_person.png"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_like.xml.flat",
@@ -76,16 +80,16 @@
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\notice_lookup.xml"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_comment_list.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\comment_list.xml"
-    },
-    {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chatbot.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_chatbot.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_book_status_progress_lookup.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\book_status_progress_lookup.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_table_border.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\table_border.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -100,16 +104,24 @@
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\book_status_progress_enroll.xml"
     },
     {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_iconfinder_comment.png.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable-v24\\iconfinder_comment.png"
+    },
+    {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bestseller_lookup.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_bestseller_lookup.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_table_border2.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\table_border2.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forum_enroll.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\activity_forum_enroll.xml"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_screen.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\screen.xml"
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_forum_content_lookup.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\forum_content_lookup.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
@@ -134,10 +146,6 @@
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_book_status_progress_modify.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\book_status_progress_modify.xml"
-    },
-    {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_like_main.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\like_main.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_information.xml.flat",
@@ -184,12 +192,12 @@
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_off.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\like_off.xml"
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_comment_enroll_popup.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\comment_enroll_popup.xml"
     },
     {
-        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\layout_top_activity.xml.flat",
-        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\layout\\top_activity.xml"
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_off.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\like_off.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_iconfinder_bookreading.png.flat",
@@ -198,6 +206,10 @@
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_like_toggle_bg.xml.flat",
         "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\like_toggle_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\drawable_text_border.xml.flat",
+        "source": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\src\\main\\res\\drawable\\text_border.xml"
     },
     {
         "merged": "C:\\Users\\ATIV\\Documents\\GitHub\\CCD\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",

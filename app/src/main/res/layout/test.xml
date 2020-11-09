@@ -3,10 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F6CED8"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:background="#F6CED8"
@@ -17,21 +19,25 @@
         app:tabIndicatorHeight="5dp">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/homeTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="홈" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/bookListTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="도서목록" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/bestsellerTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="베스트셀러" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/chatbotTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="챗봇" />
@@ -53,20 +59,23 @@
             android:id="@+id/textView50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="172dp"
+            android:layout_marginTop="24dp"
             android:text="북돋다"
             android:textColor="#E8EAF6"
             android:textSize="24sp"
-            app:layout_constraintStart_toEndOf="@+id/button28"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button28"
+            android:id="@+id/myInfoBtn"
             android:layout_width="wrap_content"
             android:layout_height="38dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="308dp"
+            android:layout_marginTop="24dp"
+            android:background="#F5A9BC"
             android:text="내 정보"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
