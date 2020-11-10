@@ -44,7 +44,7 @@ public class bookInformation extends AppCompatActivity {
         purchaseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //구매 url
             }
         });
 
