@@ -1,5 +1,6 @@
 package com.example.ccd;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -13,12 +14,20 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.zip.Inflater;
 
 public class bspWordListAdapter extends RecyclerView.Adapter<bspWordListAdapter.bspWordViewHolder> {
     private ArrayList<bookStatusData> bspData = new ArrayList<>();
     LayoutInflater mInflater;
+//    public bspWordListAdapter(ArrayList<bookStatusData> searchDataSet, Activity activity) {
+//        bspData = searchDataSet;
+//    }
 
-    public bspWordListAdapter(Context context) {mInflater = LayoutInflater.from(context);}
+    public bspWordListAdapter(bookStatusProgressLookup context) {mInflater = LayoutInflater.from(context);}
+
+    public bspWordListAdapter(ArrayList<bookStatusData> mData) {
+        bspData = mData;
+    }
 
     @NonNull
     @Override

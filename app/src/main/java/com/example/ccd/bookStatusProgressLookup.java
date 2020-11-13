@@ -16,7 +16,7 @@ public class bookStatusProgressLookup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book_status_progress_lookup);
+        setContentView(R.layout.fragment_book_status);
 
         mRecyclerView = findViewById(R.id.bspRecyclerV);
         mAdapter = new bspWordListAdapter(this);
