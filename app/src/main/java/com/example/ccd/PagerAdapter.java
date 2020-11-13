@@ -5,36 +5,19 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PagerAdapter extends FragmentStatePagerAdapter  {
-    private int tabCount;
+    List<Fragment> listFragment;
 
-    public PagerAdapter(FragmentManager fm, int tabCount) {
+    public PagerAdapter(FragmentManager fm, List<Fragment> listFragment) {
         super(fm);
-        this.tabCount = tabCount;
+        this.listFragment = listFragment;
     }
 
     @Override
-    public Fragment getItem(int position) {
-
-        // Returning the current tabs
-        switch (position) {
-            case 0:
-                homeFragment homefragment = new homeFragment();
-                return homefragment;
-//            case 1:
-//                bookStatusFragment bookstatusfragment = new bookStatusFragment();
-//                return bookstatusfragment;
-//            case 2:
-//                chatbotFragment chatbotfragment = new chatbotFragment();
-//                return chatbotfragment;
-            default:
-                return null;
-        }
-    }
+    public Fragment getItem(int position) {return listFragment.get(position);}
 
     @Override
-    public int getCount() {
-        return tabCount;
-    }
+    public int getCount() {return listFragment.size();}
 }

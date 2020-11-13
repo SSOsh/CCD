@@ -3,12 +3,17 @@ package com.example.ccd;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Tab_Main extends AppCompatActivity {
+    TabLayout tabLayout;
     PagerAdapter adapter;
     private ViewPager viewPager;
 
@@ -17,30 +22,44 @@ public class Tab_Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab__main);
 
-//        // Adding Toolbar to the activity
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        initViewPager();
+    }
 
-        // Initializing the TabLayout
-        TabLayout tabLayout = findViewById(R.id.tabLayout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab One"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab Two"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab Three"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+    private void initViewPager() {
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
 
-        // Creating TabPagerAdapter adapter
-        adapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
-        viewPager = findViewById(R.id.viewPager);
-        viewPager.setAdapter(adapter);
+        //프래그먼트 리스트에 추가
+        List<Fragment> listFragment = new ArrayList<>();
+        listFragment.add(new homeFragment());
+        listFragment.add(new bookStatusFragment());
+        listFragment.add(new chatbotFragment());
+
+        //탭 어댑터에 리스트 넘겨준 후 뷰페이저 연결
+        PagerAdapter fragmentPagerAdapter = new PagerAdapter(getSupportFragmentManager(), listFragment);
+        viewPager.setAdapter(fragmentPagerAdapter);
+
+        //각 탭 이름 지정
+        tabLayout = (TabLayout)findViewById(R.id.tabLayout);
+        tabLayout.addTab(tabLayout.newTab().setText("홈"));
+        tabLayout.addTab(tabLayout.newTab().setText("독서 상황"));
+        tabLayout.addTab(tabLayout.newTab().setText("챗봇"));
+
+        //뷰페이저 이동했을 때 & 탭 눌렸을 때 해당 위치로 이동
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
-        // Set TabSelectedListener
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-                adapter.notifyDataSetChanged();
+                switch (tab.getPosition()) {
+                    case 0:
+                        viewPager.setCurrentItem(tab.getPosition());
+                        break;
+                    case 1:
+                        viewPager.setCurrentItem(tab.getPosition());
+                        break;
+                    case 2:
+                        viewPager.setCurrentItem(tab.getPosition());
+                        break;
+                }
             }
 
             @Override
@@ -53,6 +72,5 @@ public class Tab_Main extends AppCompatActivity {
 
             }
         });
-
     }
 }
