@@ -13,7 +13,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class forumModify extends AppCompatActivity {
-    Button forumModifyBtn, forumDeleteBtn, fListBtn;
+    Button forumModifyBtn, forumDeleteBtn, fListBtn, fmCancleBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +22,13 @@ public class forumModify extends AppCompatActivity {
 
         forumModifyBtn = findViewById(R.id.forumModifyBtn);
         forumDeleteBtn = findViewById(R.id.forumDeleteBtn);
+        fmCancleBtn = findViewById(R.id.fmCancleBtn);
         fListBtn = findViewById(R.id.fListBtn);
 
         forumModifyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //게시물 수정
                 Toast.makeText(getApplicationContext(), "수정되었습니다.", Toast.LENGTH_SHORT).show();
             }
         });
@@ -34,6 +36,7 @@ public class forumModify extends AppCompatActivity {
         forumDeleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //게시물 삭제
                 AlertDialog.Builder ad = new AlertDialog.Builder(forumModify.this);
                 ad.setTitle("삭제 확인 메시지");
                 ad.setMessage("게시물을 삭제하시겠습니까?");
@@ -60,6 +63,13 @@ public class forumModify extends AppCompatActivity {
             }
         });
 
+        fmCancleBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
         fListBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
@@ -74,9 +84,7 @@ public class forumModify extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int i) {
                         dialog.dismiss();
-                        Context context = view.getContext();
-                        Intent intent = new Intent(context, forumDisplay.class);
-                        context.startActivity(intent);
+                        finish();
                     }
                 });
 

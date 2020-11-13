@@ -14,13 +14,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/videoTitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="148dp"
         android:text="책 / 드라마 / 영화 제목"
-        android:textSize="24sp"
+        android:textSize="19dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,14 +33,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/videoTitleText" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/videoContentText"
         android:layout_width="377dp"
         android:layout_height="153dp"
         android:layout_marginTop="16dp"
         android:text="설명 내용"
+        android:background="@drawable/text_border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,18 +53,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="드라마 / 영화 설명"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/videoView" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/viedoBookBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="8dp"
+        android:background="#F5A9BC"
         android:text="이 책 보러가기"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/videoContentText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

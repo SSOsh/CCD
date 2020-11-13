@@ -2,6 +2,7 @@ package com.example.ccd;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,8 @@ public class MyInfoManagement extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_info_management);
+
+        Intent intent = getIntent();
 
         nameEdit = findViewById(R.id.nameEdit);
         memberIdEdit = findViewById(R.id.memberIdEdit);

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-70:12
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-73:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\233cb7ebe03e1e8c78dc0db3bf77ecc6\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\a1ec39e5a37eebee4d1a41e1ef28c58f\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\a16db5b44425ecffd4781fb791b0f708\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -32,25 +32,29 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ATIV\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\0571339fd4cb74441b19561f6766bb98\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\0f91f258f9d0abaa0e56c019df47bd85\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\257179ec940acce9d9b9b9069652d215\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-70:12
+INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-73:12
 	package
 		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-70:12
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-73:12
 		INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-70:12
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:1-73:12
 		INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:5:5-68:19
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:6:5-71:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\233cb7ebe03e1e8c78dc0db3bf77ecc6\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\233cb7ebe03e1e8c78dc0db3bf77ecc6\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\a1ec39e5a37eebee4d1a41e1ef28c58f\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -62,75 +66,87 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AT
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\ATIV\.gradle\caches\transforms-2\files-2.1\c24177ae83091978e5c4ae83bccf2f01\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:13:9-40
+	android:usesCleartextTraffic
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:12:9-44
+activity#com.example.ccd.lookupVideo
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:14:9-58
+	android:name
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:14:19-46
+activity#com.example.ccd.commentEnrollPopup
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:15:9-109
+	android:theme
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:15:54-97
+	android:name
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:15:19-53
 activity#com.example.ccd.book_done_lookup
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:12:9-63
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:16:9-54
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:12:19-51
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:16:19-51
 activity#com.example.ccd.bookStatusProgressLookup
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:17:9-23:20
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:13:19-59
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:17:19-59
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:21:27-74
 activity#com.example.ccd.book_reading_lookup
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:20:9-57
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:24:9-57
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:20:19-54
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:24:19-54
 activity#com.example.ccd.forumDisplay
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:21:9-27:20
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:25:9-30:20
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:25:19-47
 activity#com.example.ccd.forumModify
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:28:9-36:20
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:31:9-39:20
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:28:19-46
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:31:19-46
 activity#com.example.ccd.forumEnroll
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:37:9-49
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:40:9-49
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:37:19-46
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:40:19-46
 activity#com.example.ccd.bookInformation
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:38:9-53
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:41:9-53
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:38:19-50
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:41:19-50
 activity#com.example.ccd.WordListAdapter
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:39:9-53
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:42:9-53
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:39:19-50
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:42:19-50
 activity#com.example.ccd.bestsellerLookup
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:40:9-46:20
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:43:9-49:20
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:40:19-51
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:43:19-51
 activity#com.example.ccd.bookLookup
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:53:9-59:20
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:56:9-62:20
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:53:19-45
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:56:19-45
 activity#com.example.ccd.MyInfoManagement
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:60:9-54
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:63:9-54
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:60:19-51
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:63:19-51
 activity#com.example.ccd.LikeActivity
-ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:61:9-67:20
+ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:64:9-70:20
 	android:name
-		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:61:19-47
+		ADDED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml:64:19-47
 uses-sdk
 INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\AndroidManifest.xml

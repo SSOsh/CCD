@@ -44,12 +44,13 @@ public class bookInformation extends AppCompatActivity {
         purchaseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //구매 url
             }
         });
 
         //검색 시 값 출력
         Intent intent = getIntent();
+        String title = intent.getStringExtra("videoTitleText");
         String tValue = intent.getStringExtra("title");
         String aValue = intent.getStringExtra("author");
 
