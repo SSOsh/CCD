@@ -9,7 +9,10 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
 
     <application
         android:allowBackup="true"
@@ -21,68 +24,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/Theme.MyTapTest"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.example.ccd.lookupVideo" />
-        <activity
-            android:name="com.example.ccd.commentEnrollPopup"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity android:name="com.example.ccd.book_done_lookup" />
-        <activity android:name="com.example.ccd.bookStatusProgressLookup" >
+        <activity android:name="com.example.ccd.bookStatusEnroll" />
+        <activity android:name="com.example.ccd.NoticeContentLookup" />
+        <activity android:name="com.example.ccd.notice" />
+        <activity android:name="com.example.ccd.bsResult" />
+        <activity android:name="com.example.ccd.bsSearch" />
+        <activity android:name="com.example.ccd.login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.ccd.book_reading_lookup" />
-        <activity android:name="com.example.ccd.forumDisplay" >
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name="com.example.ccd.forumModify" >
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name="com.example.ccd.forumEnroll" />
+        <activity android:name="com.example.ccd.signup" />
+        <activity android:name="com.example.ccd.bookResult" />
+        <activity android:name="com.example.ccd.search" />
         <activity android:name="com.example.ccd.bookInformation" />
-        <activity android:name="com.example.ccd.WordListAdapter" /> <!-- <activity android:name=".bookLookup" /> -->
-        <activity android:name="com.example.ccd.bestsellerLookup" >
+        <activity android:name="com.example.ccd.MyInfo" />
+        <activity android:name="com.example.ccd.bookDone" />
+        <activity android:name="com.example.ccd.bookRead" />
+        <activity android:name="com.example.ccd.bookStatus" />
+        <activity android:name="com.example.ccd.commentEnrollPopup" />
+        <activity
+            android:name="com.example.ccd.ForumEnroll"
+            android:label="@string/title_activity_forum_enroll"
+            android:theme="@style/Theme.MyTapTest.NoActionBar" /> <!-- <uses-library -->
+        <!-- android:name="com.google.android.wearable" -->
+        <!-- android:required="true" /> -->
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity> <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
-        <!-- <activity android:name=".MainActivity"> -->
-        <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> -->
-        <activity android:name="com.example.ccd.bookLookup" >
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+        <activity
+            android:name="com.example.ccd.ForumContentLookup"
+            android:label="@string/title_activity_forum_content_lookup" >
         </activity>
-        <activity android:name="com.example.ccd.MyInfoManagement" />
-        <activity android:name="com.example.ccd.LikeActivity" >
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+        <activity android:name="com.example.ccd.MainActivity" />
     </application>
 
 </manifest>

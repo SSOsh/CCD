@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/menuMyInfo"
+        android:title="내 정보"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menuBookStatus"
+        android:title="독서 상황"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menuNotice"
+        android:title="공지사항"
+        app:showAsAction="never"/>
+
+</menu>
