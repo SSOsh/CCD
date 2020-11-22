@@ -28,7 +28,7 @@ public class loginHttp extends AsyncTask<String, String, String> {
     String nickname;
     String address;
     String name;
-
+    String result;
     public loginHttp(String n, Context context) {
         arr = n.split("/");
         this.context = context;
@@ -131,6 +131,7 @@ public class loginHttp extends AsyncTask<String, String, String> {
                     name = obj.getString("name");
                     address = obj.getString("address");
                     nickname = obj.getString("nickname");
+                    result = obj.getString("result");
                 }
             }
 
@@ -148,15 +149,12 @@ public class loginHttp extends AsyncTask<String, String, String> {
             e.printStackTrace();
         }
         //로그인에서 id같은거 들고있어야하는데 어디에 들고 있을지 정해야함
-        return id+" "+pw+" "+name+" "+address+" "+nickname;
+        return id + "/" + pw + "/" + name + "/" + address + "/" + nickname + "/" + result;
     }
 
     @Override
     protected void onPostExecute(String aVoid) {
         super.onPostExecute(aVoid);
-
-        //Toast.makeText(context, jarr.getJSONObject(0).toString(), Toast.LENGTH_SHORT).show();
-        Toast.makeText(context, address, Toast.LENGTH_SHORT).show();
     }
 }
 

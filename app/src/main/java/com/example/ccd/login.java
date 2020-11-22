@@ -52,9 +52,14 @@ public class login extends AppCompatActivity {
                 loginHttp hc = new loginHttp(result, getApplicationContext());
                 hc.execute();
                 try {
-                    String st = null;
-                    st = hc.get();
-                    System.out.println(st);
+                    String[] st = null;
+                    st = hc.get().split("/");
+                    if(st[5].equals("success")) {
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(login.this, "로그인 실패하셨습니다 ㅜ", Toast.LENGTH_SHORT).show();
+                    }
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                 } catch (InterruptedException e) {
