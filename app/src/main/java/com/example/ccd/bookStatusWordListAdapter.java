@@ -36,13 +36,13 @@ public class bookStatusWordListAdapter extends RecyclerView.Adapter<bookStatusWo
 
     @NonNull
     @Override
-    public bookStatusWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+    public bookStatusWordListAdapter.bookStatusWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         View mItemView = mInflater.inflate(R.layout.book_status_recycler, viewGroup, false);
         return new bookStatusWordViewHolder(mItemView, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull bookStatusWordViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull bookStatusWordListAdapter.bookStatusWordViewHolder holder, int position) {
         holder.onBind(bspData.get(position));
 
         holder.bspTitle.setText(bspData.get(position).getBspTitle());
@@ -69,31 +69,28 @@ public class bookStatusWordListAdapter extends RecyclerView.Adapter<bookStatusWo
             readingBtn = itemView.findViewById(R.id.readingBtn);
             final JSONObject jsonObject = new JSONObject();
 
-            readingBtn.setOnClickListener(new OnClickListener() {
+            readingBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     //json 변환
                     String title = bspTitle.getText().toString();
                     String author = bspAuthor.getText().toString();
-                    String img = bspImg.getResources().toString();
-                    String result = title + "/" + author + "/" + img;
+                    String oldStatus = "읽을 책";
+                    //memberID 추가
+                    String result = title + "/" + author + "/" + oldStatus;
 
                     try {
                         jsonObject.put("title", title);
                         jsonObject.put("author", author);
-                        jsonObject.put("img", img);
+                        jsonObject.put("oldStatus", oldStatus);
                     } catch(JSONException e) {
                         e.printStackTrace();
                     }
 
-                    jsonObject.toString();
                     bookStatusHttp hc = new bookStatusHttp(result);
                     hc.execute();
 
                     Intent goReadIntent = new Intent(view.getContext(), bookRead.class);
-                    goReadIntent.putExtra("bspTitle", bspTitle.toString());
-                    goReadIntent.putExtra("bspAuthor", bspAuthor.toString());
-                    goReadIntent.putExtra("bspImg", bspImg.toString());
                     view.getContext().startActivity(goReadIntent);
                 }
             });

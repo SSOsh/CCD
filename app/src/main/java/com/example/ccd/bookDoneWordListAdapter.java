@@ -1,5 +1,4 @@
 package com.example.ccd;
-
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -28,13 +27,13 @@ public class bookDoneWordListAdapter extends RecyclerView.Adapter<bookDoneWordLi
 
     @NonNull
     @Override
-    public bookDoneWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+    public bookDoneWordListAdapter.bookDoneWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         View mItemView = mInflater.inflate(R.layout.book_done_recycler, viewGroup, false);
         return new bookDoneWordViewHolder(mItemView, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull bookDoneWordViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull bookDoneWordListAdapter.bookDoneWordViewHolder holder, int position) {
         holder.onBind(bdData.get(position));
 
         holder.bdoneTitle.setText(bdData.get(position).getBdoneTitle());
@@ -76,7 +75,6 @@ public class bookDoneWordListAdapter extends RecyclerView.Adapter<bookDoneWordLi
                         e.printStackTrace();
                     }
 
-                    jsonObject.toString();
                     bookDoneHttp hc = new bookDoneHttp(result);
                     hc.execute();
 

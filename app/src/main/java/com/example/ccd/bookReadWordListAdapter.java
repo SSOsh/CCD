@@ -27,13 +27,13 @@ public class bookReadWordListAdapter extends RecyclerView.Adapter<bookReadWordLi
 
     @NonNull
     @Override
-    public bookReadWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+    public bookReadWordListAdapter.bookReadWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         View mItemView = mInflater.inflate(R.layout.book_read_recycler, viewGroup, false);
         return new bookReadWordViewHolder(mItemView, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull bookReadWordViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull bookReadWordListAdapter.bookReadWordViewHolder holder, int position) {
         holder.onBind(brData.get(position));
 
         holder.bingTitle.setText(brData.get(position).getBingTitle());
@@ -67,25 +67,22 @@ public class bookReadWordListAdapter extends RecyclerView.Adapter<bookReadWordLi
                     //json 변환
                     String title = bingTitle.getText().toString();
                     String author = bingAuthor.getText().toString();
-                    String img = bingImg.getResources().toString();
-                    String result = title + "/" + author + "/" + img;
+                    String oldStatus = "읽는 중";
+                    String result = title + "/" + author + "/" + oldStatus;
 
                     try {
                         jsonObject.put("title", title);
                         jsonObject.put("author", author);
-                        jsonObject.put("img", img);
+                        jsonObject.put("oldStatus", oldStatus);
+                        //memberID 추가
                     } catch(JSONException e) {
                         e.printStackTrace();
                     }
 
-                    jsonObject.toString();
                     bookReadHttp hc = new bookReadHttp(result);
                     hc.execute();
 
                     Intent goDoneIntent = new Intent(itemView.getContext(), bookDone.class);
-                    goDoneIntent.putExtra("bingTitle", bingTitle.toString());
-                    goDoneIntent.putExtra("bingAuthor", bingAuthor.toString());
-                    goDoneIntent.putExtra("bingImg", bingImg.toString());
                     itemView.getContext().startActivity(goDoneIntent);
                 }
             });

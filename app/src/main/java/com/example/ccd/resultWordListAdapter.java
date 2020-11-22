@@ -17,6 +17,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class resultWordListAdapter extends BaseAdapter {
     private ArrayList<resultData> rData = new ArrayList<resultData>();
@@ -73,7 +74,7 @@ public class resultWordListAdapter extends BaseAdapter {
             holder.rBtn = (Button)converView.findViewById(R.id.rBtn);
         }
         else {
-            holder = (rListViewHolder)converView.getTag();
+            holder = (resultWordListAdapter.rListViewHolder)converView.getTag();
         }
 
         holder.rTitle.setText(rData.get(position).getrTitle());
@@ -101,10 +102,24 @@ public class resultWordListAdapter extends BaseAdapter {
                 searchBookInfoHttp hc = new searchBookInfoHttp(result);
                 hc.execute();
 
-                Intent intent = new Intent(view.getContext(), bookInformation.class);
-                intent.putExtra("rTitle", holder.rTitle.toString());
-                intent.putExtra("rAuthor", holder.rAuthor.toString());
-                view.getContext().startActivity(intent);
+                try {
+                    String arr[] = hc.get().split("/");
+
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, bookInformation.class);
+                    intent.putExtra("bookTitle", arr[0]);
+                    intent.putExtra("author", arr[1]);
+                    intent.putExtra("starRating", arr[2]);
+                    intent.putExtra("table", arr[3]);
+                    intent.putExtra("summarize", arr[4]);
+                    intent.putExtra("bookcoverUrl", arr[5]);
+
+                    context.startActivity(intent);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
         });
 

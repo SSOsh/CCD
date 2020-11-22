@@ -103,6 +103,7 @@ public class bookDislikeHttp extends AsyncTask<String, String, String> {
             try (OutputStream out = conn.getOutputStream()) {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("bookName", arr[0]);
+                jsonObject.put("author", arr[1]);
                 //userID 추가
 
                 out.write(jsonObject.toString().getBytes());
@@ -165,3 +166,4 @@ public class bookDislikeHttp extends AsyncTask<String, String, String> {
         }
     }
 }
+

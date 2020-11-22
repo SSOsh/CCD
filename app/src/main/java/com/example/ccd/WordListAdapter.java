@@ -13,7 +13,6 @@ import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ccd.controller.bookDislikeHttp;
@@ -37,13 +36,13 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
 
     @NonNull
     @Override
-    public WordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+    public WordListAdapter.WordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         View mItemView = mInflater.inflate(R.layout.book_lookup_recycler, viewGroup, false);
         return new WordViewHolder(mItemView, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull WordViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull WordListAdapter.WordViewHolder holder, final int position) {
         holder.onBind(listData.get(position));
 
         holder.bookTitle.setText(listData.get(position).getBookTitle());
@@ -128,11 +127,13 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
 
                         String title = bookTitle.getText().toString();
                         String writer = author.getText().toString();
+                        //memberID 추가
                         String result = title + "/" + writer;
 
                         try {
                             jso.put("title", title);
                             jso.put("writer", writer);
+                            //memberID 추가
                         } catch(JSONException e) {
                             e.printStackTrace();
                         }
@@ -147,6 +148,13 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
                         String title = bookTitle.getText().toString();
                         String writer = author.getText().toString();
                         String result = title + "/" + writer;
+
+                        try {
+                            json.put("title", title);
+                            json.put("writer", writer);
+                        } catch(JSONException e) {
+                            e.printStackTrace();
+                        }
 
                         bookDislikeHttp hc = new bookDislikeHttp(result);
                         hc.execute();
@@ -165,3 +173,4 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
         }
     }
 }
+

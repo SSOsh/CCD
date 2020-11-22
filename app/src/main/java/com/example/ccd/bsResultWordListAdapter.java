@@ -10,12 +10,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.ccd.controller.bsSearchBookInfoHttp;
+import com.example.ccd.controller.searchBookInfoHttp;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class bsResultWordListAdapter extends BaseAdapter {
     private ArrayList<bsResultData> bData = new ArrayList<bsResultData>();
@@ -62,14 +63,14 @@ public class bsResultWordListAdapter extends BaseAdapter {
             holder.bsrBtn = (Button)convertView.findViewById(R.id.bsrBtn);
         }
         else {
-            holder = (bListViewHolder)convertView.getTag();
+            holder = (bsResultWordListAdapter.bListViewHolder)convertView.getTag();
         }
 
         holder.bsrTitle.setText(bData.get(position).getBsrTitle());
         holder.bsrAuthor.setText(bData.get(position).getBsrAuthor());
         holder.bsrImg.setImageResource(bData.get(position).getBsrImg());
         final JSONObject jsonObject = new JSONObject();
-        
+
         holder.bsrBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,13 +88,27 @@ public class bsResultWordListAdapter extends BaseAdapter {
                 }
 
                 jsonObject.toString();
-                bsSearchBookInfoHttp hc = new bsSearchBookInfoHttp(result);
+                searchBookInfoHttp hc = new searchBookInfoHttp(result);
                 hc.execute();
 
-                Intent intent = new Intent(view.getContext(), bookInformation.class);
-                intent.putExtra("bsrTitle", holder.bsrTitle.toString());
-                intent.putExtra("bsrAuthor", holder.bsrAuthor.toString());
-                view.getContext().startActivity(intent);
+                try {
+                    String arr[] = hc.get().split("/");
+
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, bookInformation.class);
+                    intent.putExtra("bookTitle", arr[0]);
+                    intent.putExtra("author", arr[1]);
+                    intent.putExtra("starRating", arr[2]);
+                    intent.putExtra("table", arr[3]);
+                    intent.putExtra("summarize", arr[4]);
+                    intent.putExtra("bookcoverUrl", arr[5]);
+
+                    context.startActivity(intent);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
         });
 

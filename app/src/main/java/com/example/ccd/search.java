@@ -3,6 +3,7 @@ package com.example.ccd;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class search extends AppCompatActivity {
     ArrayList<searchData> sDataList;
@@ -50,13 +52,26 @@ public class search extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                jsonObject.toString();
                 searchHttp hc = new searchHttp(result);
                 hc.execute();
 
-                Intent intent = new Intent(search.this, bookResult.class);
-                intent.putExtra("searchText",searchText.getText().toString());
-                startActivity(intent);
+                try {
+                    String arr[] = hc.get().split("/");
+
+                    Context context = view.getContext();
+//                    Intent intentWeb = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+                    Intent intent = new Intent(view.getContext(), bookResult.class);
+                    intent.putExtra("bookTitle", arr[0]);
+                    intent.putExtra("author", arr[1]);
+                    intent.putExtra("starRating", arr[2]);
+                    intent.putExtra("bookcoverUrl", arr[3]);
+
+                    context.startActivity(intent);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -89,4 +104,4 @@ public class search extends AppCompatActivity {
 //        sDataList.add(new searchData("나미야"));
 //        sDataList.add(new searchData("히가시노 게이고"));
 //    }
-}
+}}

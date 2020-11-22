@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CCD.iml" filepath="$PROJECT_DIR$/CCD.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CCD.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CCD.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GitHub-CCD.iml" filepath="$PROJECT_DIR$/GitHub-CCD.iml" group="CCD" />
     </modules>
   </component>
 </project>
