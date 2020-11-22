@@ -6,72 +6,81 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
+import com.example.ccd.controller.bookPurchaseHttp;
 
-import java.io.IOException;
-import java.io.InputStream;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class bookInformation extends AppCompatActivity {
-
     TextView booktitleInfo, authorName, starRatingInfo, table, authorInfo;
     ImageView bookcoverInfo;
+    ImageButton backBtn;
     Button purchaseBtn;
+    String booktitleI, bookAuthorI, bookStarRatingI, bTableI, bSumI, bImgI;
+    String bsTitleI, bsAuthorI, rTitleI, rAuthorI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_information);
 
-        booktitleInfo = (TextView)findViewById(R.id.booktitleInfo);
-        authorName = (TextView)findViewById(R.id.authorName);
-        starRatingInfo = (TextView)findViewById(R.id.starRatingInfo);
-        table = (TextView)findViewById(R.id.table);
-        authorInfo = (TextView)findViewById(R.id.authorInfo);
-        bookcoverInfo = (ImageView) findViewById(R.id.bookcoverInfo);
-        purchaseBtn = (Button)findViewById(R.id.purchaseBtn);
+        booktitleInfo = findViewById(R.id.booktitleInfo);
+        authorName = findViewById(R.id.authorName);
+        starRatingInfo = findViewById(R.id.starRatingInfo);
+        table = findViewById(R.id.table);
+        authorInfo = findViewById(R.id.authorInfo);
+        bookcoverInfo = findViewById(R.id.bookcoverInfo);
+        purchaseBtn = findViewById(R.id.purchaseBtn);
+        backBtn = findViewById(R.id.backBtn);
 
-        purchaseBtn.setOnClickListener(new View.OnClickListener() {
+        Intent intent = getIntent();
+        booktitleI = intent.getExtras().getString("bookTitle");
+        bookAuthorI = intent.getExtras().getString("author");
+        bookStarRatingI = intent.getExtras().getString("starRating");
+        bTableI = intent.getExtras().getString("table");
+        bSumI = intent.getExtras().getString("summarize");
+        bImgI = intent.getExtras().getString("bookcoverUrl");
+
+        Intent bsIntent = getIntent();
+        bsTitleI = bsIntent.getExtras().getString("bsTitle");
+        bsAuthorI = bsIntent.getExtras().getString("bsauthor");
+
+        Intent rIntent = getIntent();
+        rTitleI = rIntent.getExtras().getString("rTitle");
+        rAuthorI = rIntent.getExtras().getString("rAuthor");
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //구매 url
+                finish();
             }
         });
 
-        //검색 시 값 출력
-        Intent intent = getIntent();
-        String title = intent.getStringExtra("videoTitleText");
-        String tValue = intent.getStringExtra("title");
-        String aValue = intent.getStringExtra("author");
+        final JSONObject jsonObject = new JSONObject();
+        //구매 링크
+        purchaseBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //json 변환
+                String title = booktitleInfo.getText().toString();
+                String author = authorName.getText().toString();
+                String result = title + "/" + author;
 
-        try {
-            //자료 들어있는 file
-            InputStream is = getAssets().open("file.xml");
+                try {
+                    jsonObject.put("title", title);
+                    jsonObject.put("author", author);
+                } catch(JSONException e) {
+                    e.printStackTrace();
+                }
 
-            DocumentBuilderFactory df = DocumentBuilderFactory.newInstance();
-            DocumentBuilder db = df.newDocumentBuilder();
-            Document d = db.parse(is);
-
-            NodeList nL = d.getElementsByTagName("output");
-            for(int i=0; i<nL.getLength(); i++) {
-                boolean check = false;
-                NodeList nodeList;
-                Node node = nL.item(i);
-                Element element = (Element)node;
-
+                jsonObject.toString();
+                bookPurchaseHttp hc = new bookPurchaseHttp(result);
+                hc.execute();
             }
-        } catch (IOException | ParserConfigurationException | SAXException e) {
-            e.printStackTrace();
-        }
+        });
     }
 }

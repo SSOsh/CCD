@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CCD.iml" filepath="$PROJECT_DIR$/CCD.iml" group="CCD" />
+      <module fileurl="file://$PROJECT_DIR$/CCD.iml" filepath="$PROJECT_DIR$/CCD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CCD.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CCD.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/GitHub-CCD.iml" filepath="$PROJECT_DIR$/GitHub-CCD.iml" group="CCD" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="CCD/app" />
     </modules>
   </component>
 </project>

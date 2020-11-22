@@ -2,72 +2,59 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ccd">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".lookupVideo"></activity>
-        <activity android:name=".commentEnrollPopup" android:theme="@android:style/Theme.Dialog"></activity>
-        <activity android:name=".book_done_lookup" />
-        <activity android:name=".bookStatusProgressLookup">
+        android:theme="@style/Theme.MyTapTest"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".bookStatusEnroll"></activity>
+        <activity android:name=".NoticeContentLookup" />
+        <activity android:name=".notice" />
+        <activity android:name=".bsResult" />
+        <activity android:name=".bsSearch" />
+        <activity android:name=".login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".book_reading_lookup" />
-        <activity android:name=".forumDisplay">
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN" />-->
-<!--             <category android:name="android.intent.category.LAUNCHER" />-->
-<!--             </intent-filter>-->
-        </activity>
-        <activity android:name=".forumModify">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name=".forumEnroll" />
+        <activity android:name=".signup" />
+        <activity android:name=".bookResult" />
+        <activity android:name=".search" />
         <activity android:name=".bookInformation" />
-        <activity android:name=".WordListAdapter" /> <!-- <activity android:name=".bookLookup" /> -->
-        <activity android:name=".bestsellerLookup">
+        <activity android:name=".MyInfo" />
+        <activity android:name=".bookDone" />
+        <activity android:name=".bookRead" />
+        <activity android:name=".bookStatus" />
+        <activity android:name=".commentEnrollPopup" />
+        <activity
+            android:name=".ForumEnroll"
+            android:label="@string/title_activity_forum_enroll"
+            android:theme="@style/Theme.MyTapTest.NoActionBar" /> <!-- <uses-library -->
+        <!-- android:name="com.google.android.wearable" -->
+        <!-- android:required="true" /> -->
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity> <!-- android:theme="@style/Theme.AppCompat.NoActionBar"> -->
-        <!-- <activity android:name=".MainActivity"> -->
-        <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> -->
-        <activity android:name=".bookLookup">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+        <activity
+            android:name=".ForumContentLookup"
+            android:label="@string/title_activity_forum_content_lookup">
         </activity>
-        <activity android:name=".MyInfoManagement" />
-        <activity android:name=".LikeActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

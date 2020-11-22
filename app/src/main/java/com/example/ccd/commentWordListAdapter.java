@@ -14,6 +14,13 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+
+import com.example.ccd.controller.commentDeleteHttp;
+import com.example.ccd.controller.commentModifyHttp;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class commentWordListAdapter extends RecyclerView.Adapter<commentWordListAdapter.commentWordViewHolder> {
@@ -24,13 +31,13 @@ public class commentWordListAdapter extends RecyclerView.Adapter<commentWordList
 
     @NonNull
     @Override
-    public commentWordListAdapter.commentWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-        View mItemView = mInflater.inflate(R.layout.comment_output, viewGroup, false);
+    public commentWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+        View mItemView = mInflater.inflate(R.layout.comment_recycler, viewGroup, false);
         return new commentWordViewHolder(mItemView, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull commentWordListAdapter.commentWordViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull commentWordViewHolder holder, int position) {
         holder.onBind(cData.get(position));
 
         holder.commentId.setText(cData.get(position).getCommentId());
@@ -54,15 +61,33 @@ public class commentWordListAdapter extends RecyclerView.Adapter<commentWordList
             commentModifyBtn = itemView.findViewById(R.id.commentModifyBtn);
             commentDeleteBtn = itemView.findViewById(R.id.commentDeleteBtn);
 
+            final JSONObject jsonObject = new JSONObject();
             commentModifyBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    //json 변환
+                    String id = commentId.getText().toString();
+                    String com = comment.getText().toString();
+                    String result = id + "/" + com;
+
+                    try {
+                        jsonObject.put("id", id);
+                        jsonObject.put("com", com);
+                    } catch(JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                    jsonObject.toString();
+                    commentModifyHttp hc = new commentModifyHttp(result);
+                    hc.execute();
+
                     Context context = view.getContext();
                     //수정 후 메시지
                     Toast.makeText(context, "수정되었습니다.", Toast.LENGTH_SHORT).show();
                 }
             });
 
+            final JSONObject jso = new JSONObject();
             commentDeleteBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -79,6 +104,22 @@ public class commentWordListAdapter extends RecyclerView.Adapter<commentWordList
                         @Override
                         public void onClick(DialogInterface dialog, int i) {
                             //삭제
+                            //json 변환
+                            String id = commentId.getText().toString();
+                            String com = comment.getText().toString();
+                            String result = id + "/" + com;
+
+                            try {
+                                jso.put("id", id);
+                                jso.put("com", com);
+                            } catch(JSONException e) {
+                                e.printStackTrace();
+                            }
+
+                            jso.toString();
+                            commentDeleteHttp hc = new commentDeleteHttp(result);
+                            hc.execute();
+
                             dialog.dismiss();
                             Toast.makeText(context, "댓글이 삭제되었습니다.", Toast.LENGTH_SHORT).show();
                         }

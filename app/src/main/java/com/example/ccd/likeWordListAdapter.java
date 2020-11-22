@@ -11,23 +11,30 @@ import android.widget.ToggleButton;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+
+import com.example.ccd.controller.disLikeHttp;
+import com.example.ccd.controller.likeHttp;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class likeWordListAdapter extends RecyclerView.Adapter<likeWordListAdapter.likeWordViewHolder> {
-   private ArrayList<likeData> listData = new ArrayList<>();
-   LayoutInflater mInflater;
+    private ArrayList<likeData> listData = new ArrayList<>();
+    LayoutInflater mInflater;
 
-   public likeWordListAdapter(Context context) {mInflater = LayoutInflater.from(context);}
+    public likeWordListAdapter(Context context) {mInflater = LayoutInflater.from(context);}
 
     @NonNull
     @Override
-    public likeWordListAdapter.likeWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-       View mItemView = mInflater.inflate(R.layout.output_like, viewGroup, false) ;
-       return new likeWordViewHolder(mItemView, this);
+    public likeWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+        View mItemView = mInflater.inflate(R.layout.like_recycler, viewGroup, false) ;
+        return new likeWordViewHolder(mItemView, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull likeWordListAdapter.likeWordViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull likeWordViewHolder holder, int position) {
         holder.onBind(listData.get(position));
     }
 
@@ -35,37 +42,67 @@ public class likeWordListAdapter extends RecyclerView.Adapter<likeWordListAdapte
     public int getItemCount() { return listData.size(); }
 
     void addItem(likeData data) { listData.add(data); }
-    void deleteItem(likeData data) {listData.remove(data);}
 
     class likeWordViewHolder extends RecyclerView.ViewHolder {
-       public final TextView bookName, writer;
-       public final ImageView bookImage;
-       public final ToggleButton like_toggle;
-       final likeWordListAdapter mAdapter;
+        public final TextView bookName, writer;
+        public final ImageView bookImage;
+        public final ToggleButton like_toggle;
+        final likeWordListAdapter mAdapter;
 
-       public likeWordViewHolder(final View itemView, likeWordListAdapter adapter) {
-           super(itemView);
-           bookName = itemView.findViewById(R.id.bookName);
-           writer = itemView.findViewById(R.id.writer);
-           bookImage = itemView.findViewById(R.id.bookImage);
-           like_toggle = itemView.findViewById(R.id.like_toggle);
+        public likeWordViewHolder(final View itemView, likeWordListAdapter adapter) {
+            super(itemView);
+            bookName = itemView.findViewById(R.id.bookName);
+            writer = itemView.findViewById(R.id.writer);
+            bookImage = itemView.findViewById(R.id.bookImage);
+            like_toggle = itemView.findViewById(R.id.like_toggle);
 
-           like_toggle.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View view) {
-                   for(int i=0; i<listData.size(); i++) {
-                       likeData data = new likeData();
-                       mAdapter.addItem(data);
-                   }
-               }
-           });
-           this.mAdapter = adapter;
-       }
+            like_toggle.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(like_toggle.isChecked()) {
+                        JSONObject jsonObject = new JSONObject();
+                        //json 변환
+                        String bname = bookName.getText().toString();
+                        String author = writer.getText().toString();
+                        String result = bname + "/" + author;
 
-       void onBind(likeData data) {
-           bookName.setText(data.getBookName());
-           writer.setText(data.getWriter());
-           bookImage.setImageResource(data.getBook_image());
-       }
+                        try {
+                            jsonObject.put("bookName", bname);
+                            jsonObject.put("author", author);
+                        } catch(JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                        jsonObject.toString();
+                        likeHttp hc = new likeHttp(result);
+                        hc.execute();
+                    } else {
+                        JSONObject jso = new JSONObject();
+                        //json 변환
+                        String bname = bookName.getText().toString();
+                        String author = writer.getText().toString();
+                        String result = bname + "/" + author;
+
+                        try {
+                            jso.put("bookName", bname);
+                            jso.put("author", author);
+                        } catch(JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                        jso.toString();
+                        disLikeHttp hc = new disLikeHttp(result);
+                        hc.execute();
+                    }
+                }
+            });
+            this.mAdapter = adapter;
+        }
+
+        void onBind(likeData data) {
+            bookName.setText(data.getBookName());
+            writer.setText(data.getWriter());
+            bookImage.setImageResource(data.getBook_image());
+        }
     }
 }
