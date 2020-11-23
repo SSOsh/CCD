@@ -13,7 +13,6 @@ import java.net.ProtocolException;
 import java.net.URL;
 
 public class homeHttp extends AsyncTask<String, String, String> {
-    String strUrl;
     String arr;
     public homeHttp(String n) {
         arr = n;
@@ -22,7 +21,6 @@ public class homeHttp extends AsyncTask<String, String, String> {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        strUrl = "http://localhost:8080/http.jsp"; //탐색하고 싶은 URL이다.
     }
 
     @Override
@@ -30,8 +28,8 @@ public class homeHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "192.168.43.81:";
-            str = str + ip + "8080/home.jsp";
+            String ip = Value.ip;
+            str = str + ip + ":8080/home.jsp";
             System.out.println(str);
             URL url = new URL(str);
             //URLConnection con = url.openConnection();

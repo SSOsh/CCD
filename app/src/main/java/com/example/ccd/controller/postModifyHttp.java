@@ -12,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 
+
 public class postModifyHttp extends AsyncTask<String, String, String> {
     String strUrl;
     String arr;
@@ -30,7 +31,7 @@ public class postModifyHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "192.168.43.81:";
+            String ip = Value.ip;
             str = str + ip + "8080/postModify.jsp";
             System.out.println(str);
             URL url = new URL(str);

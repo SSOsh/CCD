@@ -23,13 +23,18 @@ import java.util.ArrayList;
 public class likeWordListAdapter extends RecyclerView.Adapter<likeWordListAdapter.likeWordViewHolder> {
     private ArrayList<likeData> listData = new ArrayList<>();
     LayoutInflater mInflater;
-
-    public likeWordListAdapter(Context context) {mInflater = LayoutInflater.from(context);}
+    Context context;
+    String memberID;
+    public likeWordListAdapter(Context context, String memberID) {
+        mInflater = LayoutInflater.from(context);
+        this.context = context;
+        this.memberID =memberID;
+    }
 
     @NonNull
     @Override
     public likeWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-        View mItemView = mInflater.inflate(R.layout.like_recycler, viewGroup, false) ;
+        View mItemView = mInflater.inflate(R.layout.like_recycler, viewGroup, false);
         return new likeWordViewHolder(mItemView, this);
     }
 
@@ -39,9 +44,13 @@ public class likeWordListAdapter extends RecyclerView.Adapter<likeWordListAdapte
     }
 
     @Override
-    public int getItemCount() { return listData.size(); }
+    public int getItemCount() {
+        return listData.size();
+    }
 
-    void addItem(likeData data) { listData.add(data); }
+    void addItem(likeData data) {
+        listData.add(data);
+    }
 
     class likeWordViewHolder extends RecyclerView.ViewHolder {
         public final TextView bookName, writer;
@@ -57,40 +66,18 @@ public class likeWordListAdapter extends RecyclerView.Adapter<likeWordListAdapte
             like_toggle = itemView.findViewById(R.id.like_toggle);
 
             like_toggle.setOnClickListener(new View.OnClickListener() {
+
+
                 @Override
                 public void onClick(View view) {
-                    if(like_toggle.isChecked()) {
-                        JSONObject jsonObject = new JSONObject();
-                        //json 변환
-                        String bname = bookName.getText().toString();
-                        String author = writer.getText().toString();
-                        String result = bname + "/" + author;
+                    String bname = bookName.getText().toString();
+                    String author = writer.getText().toString();
+                    String result = bname + "/" + author + "/" + memberID;
 
-                        try {
-                            jsonObject.put("bookName", bname);
-                            jsonObject.put("author", author);
-                        } catch(JSONException e) {
-                            e.printStackTrace();
-                        }
-
-                        jsonObject.toString();
+                    if (like_toggle.isChecked()) {
                         likeHttp hc = new likeHttp(result);
                         hc.execute();
                     } else {
-                        JSONObject jso = new JSONObject();
-                        //json 변환
-                        String bname = bookName.getText().toString();
-                        String author = writer.getText().toString();
-                        String result = bname + "/" + author;
-
-                        try {
-                            jso.put("bookName", bname);
-                            jso.put("author", author);
-                        } catch(JSONException e) {
-                            e.printStackTrace();
-                        }
-
-                        jso.toString();
                         disLikeHttp hc = new disLikeHttp(result);
                         hc.execute();
                     }

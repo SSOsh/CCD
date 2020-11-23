@@ -2,6 +2,7 @@ package com.example.ccd;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
@@ -22,6 +24,8 @@ import org.json.JSONObject;
 
 import java.net.URI;
 import java.util.ArrayList;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class homeWordListAdapter extends RecyclerView.Adapter<homeWordListAdapter.homeWordViewHolder> {
     private ArrayList<homeData> hData = new ArrayList<>();

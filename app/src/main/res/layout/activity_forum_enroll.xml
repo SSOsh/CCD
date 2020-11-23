@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#F6CED8"
-                android:text="FORUM CONTAIN"
+                android:hint="게시물 내용"
                 android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
@@ -53,8 +53,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="120dp"
         android:background="#F6CED8"
-        android:text="forum title"
-        android:textAllCaps="true"
+        android:hint="게시물 제목"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

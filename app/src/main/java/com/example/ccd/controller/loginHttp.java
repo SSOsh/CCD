@@ -1,9 +1,9 @@
 package com.example.ccd.controller;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.view.View;
-import android.widget.Toast;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -16,6 +16,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
+
+import static android.content.Context.MODE_PRIVATE;
 
 
 public class loginHttp extends AsyncTask<String, String, String> {
@@ -55,8 +57,8 @@ public class loginHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "172.30.1.25:8080/";
-            str = str + ip + "login.jsp";
+            String ip = Value.ip;
+            str = str + ip + ":8080/login.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -134,7 +136,6 @@ public class loginHttp extends AsyncTask<String, String, String> {
                     result = obj.getString("result");
                 }
             }
-
             // 접속 해제
             conn.disconnect();
         } catch (MalformedURLException e) {

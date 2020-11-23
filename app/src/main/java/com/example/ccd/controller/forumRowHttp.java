@@ -30,8 +30,8 @@ public class forumRowHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "192.168.43.81:";
-            str = str + ip + "8080/http.jsp";
+            String ip = Value.ip;
+            str = str + ip + ":8080/http.jsp";
             System.out.println(str);
             URL url = new URL(str);
             //URLConnection con = url.openConnection();

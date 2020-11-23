@@ -16,6 +16,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.IDN;
+import java.util.concurrent.ExecutionException;
 
 
 public class signup extends AppCompatActivity {
@@ -57,21 +58,23 @@ public class signup extends AppCompatActivity {
                 String email = useremail.getText().toString();
                 String result = name + "/" + userID + "/" + password + "/" + nickname + "/" + email;
 
-                try {
-                    jsonObject.put("name", name);
-                    jsonObject.put("userID", userID);
-                    jsonObject.put("password", password);
-                    jsonObject.put("nickname", nickname);
-                    jsonObject.put("email", email);
-                } catch(JSONException e) {
-                    e.printStackTrace();
-                }
-
-                jsonObject.toString();
                 signupHttp hc = new signupHttp(result);
                 hc.execute();
-
-                Toast.makeText(getApplicationContext(), "등록되었습니다.", Toast.LENGTH_SHORT).show();
+                String ret = "";
+                try {
+                    ret = hc.get();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                if(ret.equals("success")) {
+                    Toast.makeText(getApplicationContext(), "등록되었습니다.", Toast.LENGTH_SHORT).show();
+                    finish();
+                }else {
+                    Toast.makeText(getApplicationContext(), "등록실패되었습니다.", Toast.LENGTH_SHORT).show();
+                }
+                
             }
 
         });

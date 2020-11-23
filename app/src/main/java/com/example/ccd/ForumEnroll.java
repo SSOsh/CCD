@@ -3,6 +3,7 @@ package com.example.ccd;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 
@@ -22,6 +23,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.ExecutionException;
+
 public class ForumEnroll extends AppCompatActivity {
     TextView forumMem, forumDate;
     EditText forumTitle, forumText;
@@ -33,13 +38,28 @@ public class ForumEnroll extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forum_enroll);
 
+        SharedPreferences sharedPreferences= getSharedPreferences("Value", MODE_PRIVATE);    // test 이름의 기본모드 설정, 만약 test key값이 있다면 해당 값을 불러옴.
+        String inputText = "";
+        inputText = sharedPreferences.getString("id","");
+
         Intent intent = getIntent();
 
-        ff = new ForumFragment();
+//        ff = new ForumFragment();
+        //게시물제목
         forumTitle = findViewById(R.id.forumTitle);
+        //게시물내용
         forumText = findViewById(R.id.forumText);
+        //등록버튼
         fEnrollBtn = findViewById(R.id.fEnrollBtn);
+        //취소버튼
         fEnrollCancleBtn = findViewById(R.id.fEnrollCancleBtn);
+
+        forumMem = findViewById(R.id.forumMem);
+        forumDate = findViewById(R.id.forumDate);
+        forumMem.setText(inputText);
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date time = new Date();
+        forumDate.setText(format.format(time));
         final JSONObject jsonObject = new JSONObject();
 
         final TableRow tableRow = new TableRow(getApplicationContext());
@@ -59,6 +79,7 @@ public class ForumEnroll extends AppCompatActivity {
                 TextView mText = new TextView(getApplicationContext());
                 TextView dText = new TextView(getApplicationContext());
 
+                //추가
                 tText.setText(fTitle);
                 tableRow.addView(tText);
                 teText.setText(fText);
@@ -71,20 +92,26 @@ public class ForumEnroll extends AppCompatActivity {
                 ff.forumTable.addView(tableRow);
                 
                 //json 변환
-                String result = fTitle + "/" + fText;
+                String result = fMem + "/" + fTitle + "/" + fText;
 
-                try {
-                    jsonObject.put("fTitle", fTitle);
-                    jsonObject.put("fText", fText);
-                } catch(JSONException e) {
-                    e.printStackTrace();
-                }
-
-                jsonObject.toString();
                 postEnrollHttp hc = new postEnrollHttp(result);
                 hc.execute();
+                try {
+                    result = hc.get();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                if(result.equals("success")) {
+                    Toast.makeText(getApplicationContext(), "등록되었습니다.", Toast.LENGTH_SHORT).show();
+                    finish();
+                }else {
+                    Toast.makeText(getApplicationContext(), "등록실패입니다.", Toast.LENGTH_SHORT).show();
+                }
 
-                Toast.makeText(getApplicationContext(), "등록되었습니다.", Toast.LENGTH_SHORT).show();
+
+                
             }
         });
 

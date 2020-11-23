@@ -1,5 +1,6 @@
 package com.example.ccd;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,6 +14,8 @@ import android.view.ViewGroup;
 import java.util.Arrays;
 import java.util.List;
 
+import static android.content.Context.MODE_PRIVATE;
+
 public class likeFragment extends Fragment {
     RecyclerView mRecyclerView;
     likeWordListAdapter mAdapter;
@@ -21,9 +24,12 @@ public class likeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = (View)inflater.inflate(R.layout.fragment_like, container, false);
 
+        SharedPreferences sharedPreferences= getActivity().getSharedPreferences("Value", MODE_PRIVATE);    // test 이름의 기본모드 설정, 만약 test key값이 있다면 해당 값을 불러옴.
+        String memberID = "";
+        memberID = sharedPreferences.getString("id","");
 
         mRecyclerView = view.findViewById(R.id.recyclerView2);
-        mAdapter = new likeWordListAdapter(view.getContext());
+        mAdapter = new likeWordListAdapter(view.getContext(), memberID);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
         initData();

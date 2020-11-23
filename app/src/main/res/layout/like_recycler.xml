@@ -63,7 +63,7 @@
         android:id="@+id/like_toggle"
         android:layout_width="59dp"
         android:layout_height="60dp"
-        android:background="@drawable/like_off"
+        android:background="@drawable/like_toggle_bg"
         android:onClick="onToggleClicked"
         android:textOff=""
         android:textOn=""
