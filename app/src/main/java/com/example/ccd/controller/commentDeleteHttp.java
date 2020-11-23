@@ -68,7 +68,7 @@ public class commentDeleteHttp extends AsyncTask<String, String, String> {
         try {
             String str = "http://";
             String ip = "172.30.1.2:8080/";
-            str = str + ip + "login.jsp";
+            str = str + ip + "commentDelete.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -99,7 +99,6 @@ public class commentDeleteHttp extends AsyncTask<String, String, String> {
             // 요청 파라미터 출력
             // - 파라미터는 쿼리 문자열의 형식으로 지정 (ex) 이름=값&이름=값 형식&...
             // - 파라미터의 값으로 한국어 등을 송신하는 경우는 URL 인코딩을 해야 함.
-
             try (OutputStream out = conn.getOutputStream()) {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("memberID", arr[0]);
@@ -170,11 +169,5 @@ public class commentDeleteHttp extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String aVoid) {
         super.onPostExecute(aVoid);
-
-        try {
-            Toast.makeText(context, jarr.getJSONObject(0).toString(), Toast.LENGTH_SHORT).show();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
     }
 }

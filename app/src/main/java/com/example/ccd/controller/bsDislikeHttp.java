@@ -67,7 +67,7 @@ public class bsDislikeHttp extends AsyncTask<String, String, String> {
         try {
             String str = "http://";
             String ip = "172.30.1.2:8080/";
-            str = str + ip + "login.jsp";
+            str = str + ip + "bsDislike.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기

@@ -68,7 +68,7 @@ public class bookDislikeHttp extends AsyncTask<String, String, String> {
         try {
             String str = "http://";
             String ip = "172.30.1.2:8080/";
-            str = str + ip + "login.jsp";
+            str = str + ip + "bookDislike.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -104,7 +104,7 @@ public class bookDislikeHttp extends AsyncTask<String, String, String> {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("bookName", arr[0]);
                 jsonObject.put("author", arr[1]);
-                //userID 추가
+                jsonObject.put("memberID", arr[2]);
 
                 out.write(jsonObject.toString().getBytes());
                 out.flush();

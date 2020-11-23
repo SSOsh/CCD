@@ -139,10 +139,10 @@
         app:layout_constraintVertical_bias="0.754" />
 
     <TextView
-        android:id="@+id/authorInfoTitle"
+        android:id="@+id/sumInfoTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="저자정보"
+        android:text="줄거리"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -168,10 +168,10 @@
         app:layout_constraintVertical_bias="0.316" />
 
     <TextView
-        android:id="@+id/authorInfo"
+        android:id="@+id/sumInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="저자 소개 내용"
+        android:text="도서 소개 내용"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

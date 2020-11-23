@@ -22,6 +22,7 @@ import org.json.JSONObject;
 
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class homeWordListAdapter extends RecyclerView.Adapter<homeWordListAdapter.homeWordViewHolder> {
     private ArrayList<homeData> hData = new ArrayList<>();
@@ -84,22 +85,36 @@ public class homeWordListAdapter extends RecyclerView.Adapter<homeWordListAdapte
             goBook.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String title = videoTitleText.getText().toString();
-                    String result = title;
+                    String videoUrl = hData.get(getAdapterPosition()).getVideoView();
+                    String result = videoUrl;
 
                     try {
-                        jsonObject.put("title", title);
+                        jsonObject.put("videoUrl", videoUrl);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
 
-                    jsonObject.toString();
                     homeHttp hc = new homeHttp(result);
                     hc.execute();
-
                     Context context = view.getContext();
-                    Intent intent = new Intent(context, bookInformation.class);
-                    context.startActivity(intent);
+
+                    try {
+                        String arr[] = hc.get().split("/");
+
+                        Intent intent = new Intent(view.getContext(), bookInformation.class);
+                        intent.putExtra("bookTitle", arr[0]);
+                        intent.putExtra("author", arr[1]);
+                        intent.putExtra("starRating", arr[2]);
+                        intent.putExtra("table", arr[3]);
+                        intent.putExtra("summarize", arr[4]);
+                        intent.putExtra("bookcoverUrl", arr[5]);
+
+                        context.startActivity(intent);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    }
                 }
             });
 

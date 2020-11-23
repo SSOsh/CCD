@@ -67,6 +67,7 @@ public class bookReadWordListAdapter extends RecyclerView.Adapter<bookReadWordLi
                     //json 변환
                     String title = bingTitle.getText().toString();
                     String author = bingAuthor.getText().toString();
+                    //memberID 추가
                     String oldStatus = "읽는 중";
                     String result = title + "/" + author + "/" + oldStatus;
 

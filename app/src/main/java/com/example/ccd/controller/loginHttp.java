@@ -107,7 +107,6 @@ public class loginHttp extends AsyncTask<String, String, String> {
             InputStream is = null;
             String responseStr = null;
 
-
             if (responseCode == HttpURLConnection.HTTP_OK) {
                 is = conn.getInputStream();
                 baos = new ByteArrayOutputStream();

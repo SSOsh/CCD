@@ -68,7 +68,7 @@ public class commentModifyHttp extends AsyncTask<String, String, String> {
         try {
             String str = "http://";
             String ip = "172.30.1.2:8080/";
-            str = str + ip + "login.jsp";
+            str = str + ip + "commentModify.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -104,6 +104,7 @@ public class commentModifyHttp extends AsyncTask<String, String, String> {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("memberID", arr[0]);
                 jsonObject.put("contents", arr[1]);
+                jsonObject.put("oldComment", arr[2]);
 
                 out.write(jsonObject.toString().getBytes());
                 out.flush();
@@ -113,7 +114,7 @@ public class commentModifyHttp extends AsyncTask<String, String, String> {
                 ioException.printStackTrace();
             }
 
-            // 응답 내용(BODY) 구하기
+//             응답 내용(BODY) 구하기
 //            int responseCode = conn.getResponseCode();
 //
 //            ByteArrayOutputStream baos = null;

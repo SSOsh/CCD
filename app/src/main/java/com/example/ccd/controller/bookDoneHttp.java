@@ -68,7 +68,7 @@ public class bookDoneHttp extends AsyncTask<String, String, String> {
         try {
             String str = "http://";
             String ip = "172.30.1.2:8080/";
-            str = str + ip + "login.jsp";
+            str = str + ip + "bookDone.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -103,8 +103,7 @@ public class bookDoneHttp extends AsyncTask<String, String, String> {
             try (OutputStream out = conn.getOutputStream()) {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("bookName", arr[0]);
-                jsonObject.put("author", arr[1]);
-                jsonObject.put("bookImg", arr[2]);
+                jsonObject.put("memberID", arr[1]);
 
                 out.write(jsonObject.toString().getBytes());
                 out.flush();
@@ -137,7 +136,7 @@ public class bookDoneHttp extends AsyncTask<String, String, String> {
 
                 JSONObject responseJSON = new JSONObject(responseStr);
                 //json데이터가 Map같은 형식일 때
-                jarr =  responseJSON.getJSONArray("");
+                jarr =  responseJSON.getJSONArray("bookDone");
             }
             // 접속 해제
             conn.disconnect();
