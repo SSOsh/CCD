@@ -16,7 +16,7 @@ import java.util.List;
 public class bookStatus extends AppCompatActivity {
     RecyclerView mRecyclerView;
     bookStatusWordListAdapter mAdapter;
-    Button goReadBook, goDoneBook;
+    Button goReadBook, goDoneBook, enrollStatusBtn;
     ImageButton homeBtn;
     MainActivity mActivity;
     homeFragment hFragment;
@@ -30,6 +30,7 @@ public class bookStatus extends AppCompatActivity {
 
         goReadBook = findViewById(R.id.goReadBook);
         goDoneBook = findViewById(R.id.goDoneBook);
+        enrollStatusBtn = findViewById(R.id.enrollStatusBtn);
         mRecyclerView = findViewById(R.id.bspRecyclerV);
         mAdapter = new bookStatusWordListAdapter(this);
         mRecyclerView.setAdapter(mAdapter);
@@ -58,6 +59,14 @@ public class bookStatus extends AppCompatActivity {
             public void onClick(View view) {
                 Intent sToD = new Intent(getApplicationContext(), bookDone.class);
                 view.getContext().startActivity(sToD);
+            }
+        });
+
+        enrollStatusBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent eIntent = new Intent(getApplicationContext(), bookStatusEnroll.class);
+                view.getContext().startActivity(eIntent);
             }
         });
 

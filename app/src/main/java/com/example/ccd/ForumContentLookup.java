@@ -52,19 +52,20 @@ public class ForumContentLookup extends AppCompatActivity {
         forumModifyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //닉네임 동일한지 확인
+                //userID 확인
                 //동일하면 수정 아니면 메시지
                 //json 변환
-                String nick = forumNickname.getText().toString();
-                String result = nick;
+                String titleText = forumTitleText.getText().toString();
+                String content = forumContentText.getText().toString();
+                String result = titleText + "/" + content;
 
                 try {
-                    jsonObject.put("nick", nick);
+                    jsonObject.put("titleText", titleText);
+                    jsonObject.put("content", content);
                 } catch(JSONException e) {
                     e.printStackTrace();
                 }
 
-                jsonObject.toString();
                 postModifyHttp hc = new postModifyHttp(result);
                 hc.execute();
             }
@@ -88,16 +89,16 @@ public class ForumContentLookup extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int i) {
                         //json 변환
-                        String nick = forumNickname.getText().toString();
-                        String result = nick;
+                        //memberID 추가
+                        String titleText = forumTitleText.getText().toString();
+                        String result = titleText;
 
                         try {
-                            jso.put("nick", nick);
+                            jso.put("titleText", titleText);
                         } catch(JSONException e) {
                             e.printStackTrace();
                         }
 
-                        jso.toString();
                         postDeleteHttp hc = new postDeleteHttp(result);
                         hc.execute();
 

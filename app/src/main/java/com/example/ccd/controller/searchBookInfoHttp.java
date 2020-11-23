@@ -30,7 +30,7 @@ public class searchBookInfoHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "192.168.43.81:";
+            String ip = "172.30.1.2:";
             str = str + ip + "8080/searchBookInfo.jsp";
             System.out.println(str);
             URL url = new URL(str);

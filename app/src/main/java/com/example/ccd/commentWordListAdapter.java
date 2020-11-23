@@ -71,13 +71,12 @@ public class commentWordListAdapter extends RecyclerView.Adapter<commentWordList
                     String result = id + "/" + com;
 
                     try {
-                        jsonObject.put("id", id);
-                        jsonObject.put("com", com);
+                        jsonObject.put("memberID", id);
+                        jsonObject.put("contents", com);
                     } catch(JSONException e) {
                         e.printStackTrace();
                     }
 
-                    jsonObject.toString();
                     commentModifyHttp hc = new commentModifyHttp(result);
                     hc.execute();
 
@@ -110,13 +109,12 @@ public class commentWordListAdapter extends RecyclerView.Adapter<commentWordList
                             String result = id + "/" + com;
 
                             try {
-                                jso.put("id", id);
-                                jso.put("com", com);
+                                jso.put("memberID", id);
+                                jso.put("contents", com);
                             } catch(JSONException e) {
                                 e.printStackTrace();
                             }
 
-                            jso.toString();
                             commentDeleteHttp hc = new commentDeleteHttp(result);
                             hc.execute();
 

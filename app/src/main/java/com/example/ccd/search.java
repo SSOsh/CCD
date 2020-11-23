@@ -104,4 +104,4 @@ public class search extends AppCompatActivity {
 //        sDataList.add(new searchData("나미야"));
 //        sDataList.add(new searchData("히가시노 게이고"));
 //    }
-}}
+}

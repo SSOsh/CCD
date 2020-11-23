@@ -3,7 +3,6 @@ package com.example.ccd.controller;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.view.View;
-import android.widget.Toast;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -54,9 +53,10 @@ public class loginHttp extends AsyncTask<String, String, String> {
         jarr = new JSONArray();
         HttpURLConnection conn;
         try {
-            String str = "http://";
-            String ip = "172.30.1.25:8080/";
-            str = str + ip + "login.jsp";
+//            String str = "http://";
+//            String ip =  Value.ip;
+//            str = str + ip + ":8080/login.jsp";
+            String str= "http://192.168.43.37:8080/login.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -134,7 +134,6 @@ public class loginHttp extends AsyncTask<String, String, String> {
                     result = obj.getString("result");
                 }
             }
-
             // 접속 해제
             conn.disconnect();
         } catch (MalformedURLException e) {
@@ -157,4 +156,3 @@ public class loginHttp extends AsyncTask<String, String, String> {
         super.onPostExecute(aVoid);
     }
 }
-
