@@ -103,96 +103,100 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tn
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:16:9-47
 	android:usesCleartextTraffic
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:17:9-44
+activity#com.example.ccd.commentModifyPopup
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:9-65
+	android:name
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:19-53
 activity#com.example.ccd.bookStatusEnroll
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:9-63
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:9-54
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:19-51
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:19-51
 activity#com.example.ccd.NoticeContentLookup
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:9-57
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:9-57
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:19-54
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:19-54
 activity#com.example.ccd.notice
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:9-44
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:9-44
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:19-41
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:19-41
 activity#com.example.ccd.bsResult
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:9-46
-	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:19-43
-activity#com.example.ccd.bsSearch
 ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:9-46
 	android:name
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:19-43
+activity#com.example.ccd.bsSearch
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:9-46
+	android:name
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:19-43
 activity#com.example.ccd.login
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:9-29:20
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:24:9-30:20
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:19-40
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:24:19-40
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:28:27-74
 activity#com.example.ccd.signup
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:30:9-44
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:9-44
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:30:19-41
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:19-41
 activity#com.example.ccd.bookResult
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:9-48
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:9-48
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:19-45
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:19-45
 activity#com.example.ccd.search
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:9-44
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:9-44
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:19-41
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:19-41
 activity#com.example.ccd.bookInformation
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:9-53
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:9-53
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:19-50
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:19-50
 activity#com.example.ccd.MyInfo
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:9-44
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:9-44
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:19-41
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:19-41
 activity#com.example.ccd.bookDone
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:9-46
-	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:19-43
-activity#com.example.ccd.bookRead
 ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:9-46
 	android:name
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:19-43
+activity#com.example.ccd.bookRead
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:9-46
+	android:name
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:19-43
 activity#com.example.ccd.bookStatus
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:9-48
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:9-48
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:19-45
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:19-45
 activity#com.example.ccd.commentEnrollPopup
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:9-56
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:39:9-56
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:19-53
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:39:19-53
 activity#com.example.ccd.ForumEnroll
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:39:9-42:66
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:40:9-43:66
 	android:label
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:41:13-64
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:42:13-64
 	android:theme
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:42:13-63
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:43:13-63
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:40:13-40
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:41:13-40
 meta-data#com.google.android.wearable.standalone
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:49:9-51:36
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:50:9-52:36
 	android:value
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:51:13-33
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:52:13-33
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:50:13-66
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:51:13-66
 activity#com.example.ccd.ForumContentLookup
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:53:9-56:20
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:54:9-56:84
 	android:label
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:55:13-72
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:56:13-72
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:54:13-47
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:55:13-47
 activity#com.example.ccd.MainActivity
 ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:57:9-50
 	android:name

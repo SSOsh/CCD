@@ -13,7 +13,6 @@ import java.net.ProtocolException;
 import java.net.URL;
 
 public class statusEnrollHttp  extends AsyncTask<String, String, String> {
-    String strUrl;
     String arr;
     public statusEnrollHttp(String n) {
         arr = n;
@@ -22,7 +21,6 @@ public class statusEnrollHttp  extends AsyncTask<String, String, String> {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        strUrl = "http://localhost:8080/http.jsp"; //탐색하고 싶은 URL이다.
     }
 
     @Override

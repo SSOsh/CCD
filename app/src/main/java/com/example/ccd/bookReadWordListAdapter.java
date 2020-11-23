@@ -27,13 +27,13 @@ public class bookReadWordListAdapter extends RecyclerView.Adapter<bookReadWordLi
 
     @NonNull
     @Override
-    public bookReadWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+    public bookReadWordListAdapter.bookReadWordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         View mItemView = mInflater.inflate(R.layout.book_read_recycler, viewGroup, false);
         return new bookReadWordViewHolder(mItemView, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull bookReadWordViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull bookReadWordListAdapter.bookReadWordViewHolder holder, int position) {
         holder.onBind(brData.get(position));
 
         holder.bingTitle.setText(brData.get(position).getBingTitle());
@@ -67,6 +67,7 @@ public class bookReadWordListAdapter extends RecyclerView.Adapter<bookReadWordLi
                     //json 변환
                     String title = bingTitle.getText().toString();
                     String author = bingAuthor.getText().toString();
+                    //memberID 추가
                     String oldStatus = "읽는 중";
                     String result = title + "/" + author + "/" + oldStatus;
 

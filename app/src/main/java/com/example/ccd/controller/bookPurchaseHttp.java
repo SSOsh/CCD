@@ -67,8 +67,8 @@ public class bookPurchaseHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = Value.ip;
-            str = str + ip + ":8080/bookPurchase.jsp";
+            String ip = "172.30.1.2:8080/";
+            str = str + ip + "bookPurchase.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -102,7 +102,7 @@ public class bookPurchaseHttp extends AsyncTask<String, String, String> {
 
             try (OutputStream out = conn.getOutputStream()) {
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("title", arr[0]);
+                jsonObject.put("bookName", arr[0]);
                 jsonObject.put("author", arr[1]);
 
                 out.write(jsonObject.toString().getBytes());
@@ -136,13 +136,14 @@ public class bookPurchaseHttp extends AsyncTask<String, String, String> {
 
                 JSONObject responseJSON = new JSONObject(responseStr);
                 //json데이터가 Map같은 형식일 때
-                jarr =  responseJSON.getJSONArray("book");
+                jarr =  responseJSON.getJSONArray("bookPurchase");
 
                 String purchaseUrl;
 
                 for(int i=0;i<jarr.length();i++) {
                     JSONObject obj = jarr.getJSONObject(i);
                     purchaseUrl = obj.getString("purchaseUrl");
+                    result = purchaseUrl;
                 }
             }
             // 접속 해제
@@ -158,7 +159,7 @@ public class bookPurchaseHttp extends AsyncTask<String, String, String> {
         catch (JSONException e) {
             e.printStackTrace();
         }
-        return null;
+        return result;
     }
 
     @Override

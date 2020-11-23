@@ -3,6 +3,7 @@ package com.example.ccd;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,35 +55,20 @@ public class commentWordListAdapter extends RecyclerView.Adapter<commentWordList
         public final Button commentModifyBtn, commentDeleteBtn;
         final commentWordListAdapter mAdapter;
 
-        public commentWordViewHolder(View itemView, commentWordListAdapter adapter) {
+        public commentWordViewHolder(final View itemView, commentWordListAdapter adapter) {
             super(itemView);
             commentId = itemView.findViewById(R.id.commentId);
             comment = itemView.findViewById(R.id.comment);
             commentModifyBtn = itemView.findViewById(R.id.commentModifyBtn);
             commentDeleteBtn = itemView.findViewById(R.id.commentDeleteBtn);
 
-            final JSONObject jsonObject = new JSONObject();
+//            final JSONObject jsonObject = new JSONObject();
             commentModifyBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //json 변환
-                    String id = commentId.getText().toString();
-                    String com = comment.getText().toString();
-                    String result = id + "/" + com;
-
-                    try {
-                        jsonObject.put("memberID", id);
-                        jsonObject.put("contents", com);
-                    } catch(JSONException e) {
-                        e.printStackTrace();
-                    }
-
-                    commentModifyHttp hc = new commentModifyHttp(result);
-                    hc.execute();
-
-                    Context context = view.getContext();
-                    //수정 후 메시지
-                    Toast.makeText(context, "수정되었습니다.", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(itemView.getContext(), commentModifyPopup.class);
+                    intent.putExtra("comment", comment.getText().toString());
+                    itemView.getContext().startActivity(intent);
                 }
             });
 

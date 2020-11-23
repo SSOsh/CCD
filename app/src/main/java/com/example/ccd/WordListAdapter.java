@@ -89,6 +89,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
                     try {
                         jsonObject.put("title", title);
                         jsonObject.put("writer", writer);
+                        //memberID 추가
                     } catch(JSONException e) {
                         e.printStackTrace();
                     }

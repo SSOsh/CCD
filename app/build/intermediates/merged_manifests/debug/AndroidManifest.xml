@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyTapTest"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.ccd.commentModifyPopup" />
         <activity android:name="com.example.ccd.bookStatusEnroll" />
         <activity android:name="com.example.ccd.NoticeContentLookup" />
         <activity android:name="com.example.ccd.notice" />
@@ -61,8 +62,7 @@
 
         <activity
             android:name="com.example.ccd.ForumContentLookup"
-            android:label="@string/title_activity_forum_content_lookup" >
-        </activity>
+            android:label="@string/title_activity_forum_content_lookup" />
         <activity android:name="com.example.ccd.MainActivity" />
     </application>
 

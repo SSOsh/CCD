@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyTapTest"
         android:usesCleartextTraffic="true">
-        <activity android:name=".bookStatusEnroll"></activity>
+        <activity android:name=".commentModifyPopup"></activity>
+        <activity android:name=".bookStatusEnroll" />
         <activity android:name=".NoticeContentLookup" />
         <activity android:name=".notice" />
         <activity android:name=".bsResult" />
@@ -52,8 +53,7 @@
 
         <activity
             android:name=".ForumContentLookup"
-            android:label="@string/title_activity_forum_content_lookup">
-        </activity>
+            android:label="@string/title_activity_forum_content_lookup"></activity>
         <activity android:name=".MainActivity" />
     </application>
 

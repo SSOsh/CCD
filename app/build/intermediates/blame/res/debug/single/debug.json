@@ -12,12 +12,12 @@
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\iconfinder_write.png"
     },
     {
-        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable_iconfinder_home.png.flat",
-        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\iconfinder_home.png"
-    },
-    {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_read.xml.flat",
         "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\layout\\activity_book_read.xml"
+    },
+    {
+        "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\drawable_iconfinder_home.png.flat",
+        "source": "C:\\GitHub\\ccd\\app\\src\\main\\res\\drawable\\iconfinder_home.png"
     },
     {
         "merged": "C:\\GitHub\\ccd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",

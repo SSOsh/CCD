@@ -67,8 +67,8 @@ public class bsSearchBookInfoHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = Value.ip;
-            str = str + ip + ":8080/login.jsp";
+            String ip = "172.30.1.2:8080/";
+            str = str + ip + "bsSearchBookInfo.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기

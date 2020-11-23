@@ -67,8 +67,8 @@ public class bookReadHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = Value.ip;
-            str = str + ip + ":8080/bookRead.jsp";
+            String ip = "172.30.1.2:8080/";
+            str = str + ip + "bookRead.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -102,9 +102,10 @@ public class bookReadHttp extends AsyncTask<String, String, String> {
 
             try (OutputStream out = conn.getOutputStream()) {
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("bookName", arr[0]);
-                jsonObject.put("author", arr[1]);
-                jsonObject.put("oldStatus", arr[2]);
+                jsonObject.put("title", arr[0]);
+                jsonObject.put("writer", arr[1]);
+                jsonObject.put("memberID", arr[2]);
+                jsonObject.put("oldStatus", arr[3]);
 
                 out.write(jsonObject.toString().getBytes());
                 out.flush();
@@ -115,30 +116,30 @@ public class bookReadHttp extends AsyncTask<String, String, String> {
             }
 
             // 응답 내용(BODY) 구하기
-            int responseCode = conn.getResponseCode();
-
-            ByteArrayOutputStream baos = null;
-            InputStream is = null;
-            String responseStr = null;
-
-
-            if (responseCode == HttpURLConnection.HTTP_OK) {
-                is = conn.getInputStream();
-                baos = new ByteArrayOutputStream();
-                byte[] byteBuffer = new byte[1024];
-                byte[] byteData = null;
-                int nLength = 0;
-                while ((nLength = is.read(byteBuffer, 0, byteBuffer.length)) != -1) {
-                    baos.write(byteBuffer, 0, nLength);
-                }
-                byteData = baos.toByteArray();
-
-                responseStr = new String(byteData);
-
-                JSONObject responseJSON = new JSONObject(responseStr);
-                //json데이터가 Map같은 형식일 때
-                jarr =  responseJSON.getJSONArray("");
-            }
+//            int responseCode = conn.getResponseCode();
+//
+//            ByteArrayOutputStream baos = null;
+//            InputStream is = null;
+//            String responseStr = null;
+//
+//
+//            if (responseCode == HttpURLConnection.HTTP_OK) {
+//                is = conn.getInputStream();
+//                baos = new ByteArrayOutputStream();
+//                byte[] byteBuffer = new byte[1024];
+//                byte[] byteData = null;
+//                int nLength = 0;
+//                while ((nLength = is.read(byteBuffer, 0, byteBuffer.length)) != -1) {
+//                    baos.write(byteBuffer, 0, nLength);
+//                }
+//                byteData = baos.toByteArray();
+//
+//                responseStr = new String(byteData);
+//
+//                JSONObject responseJSON = new JSONObject(responseStr);
+//                //json데이터가 Map같은 형식일 때
+//                jarr =  responseJSON.getJSONArray("");
+//            }
             // 접속 해제
             conn.disconnect();
         } catch (MalformedURLException e) {
@@ -149,8 +150,8 @@ public class bookReadHttp extends AsyncTask<String, String, String> {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
         }
         return null;
     }
