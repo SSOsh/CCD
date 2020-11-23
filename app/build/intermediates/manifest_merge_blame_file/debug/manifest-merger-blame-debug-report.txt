@@ -37,98 +37,97 @@
 23-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:14:9-54
 24        android:supportsRtl="true"
 24-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:15:9-35
-25        android:testOnly="true"
-26        android:theme="@style/Theme.MyTapTest"
-26-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:16:9-47
-27        android:usesCleartextTraffic="true" >
-27-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:17:9-44
-28        <activity android:name="com.example.ccd.bookStatusEnroll" />
-28-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:9-63
-28-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:19-51
-29        <activity android:name="com.example.ccd.NoticeContentLookup" />
-29-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:9-57
-29-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:19-54
-30        <activity android:name="com.example.ccd.notice" />
-30-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:9-44
-30-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:19-41
-31        <activity android:name="com.example.ccd.bsResult" />
-31-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:9-46
-31-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:19-43
-32        <activity android:name="com.example.ccd.bsSearch" />
-32-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:9-46
-32-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:19-43
-33        <activity android:name="com.example.ccd.login" >
-33-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:9-29:20
-33-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:19-40
-34            <intent-filter>
-34-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:24:13-28:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:17-69
-35-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:27:17-77
-37-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:27:27-74
-38            </intent-filter>
-39        </activity>
-40        <activity android:name="com.example.ccd.signup" />
-40-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:30:9-44
-40-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:30:19-41
-41        <activity android:name="com.example.ccd.bookResult" />
-41-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:9-48
-41-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:19-45
-42        <activity android:name="com.example.ccd.search" />
-42-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:9-44
-42-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:19-41
-43        <activity android:name="com.example.ccd.bookInformation" />
-43-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:9-53
-43-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:19-50
-44        <activity android:name="com.example.ccd.MyInfo" />
-44-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:9-44
-44-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:19-41
-45        <activity android:name="com.example.ccd.bookDone" />
-45-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:9-46
-45-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:19-43
-46        <activity android:name="com.example.ccd.bookRead" />
-46-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:9-46
-46-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:19-43
-47        <activity android:name="com.example.ccd.bookStatus" />
-47-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:9-48
-47-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:19-45
-48        <activity android:name="com.example.ccd.commentEnrollPopup" />
-48-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:9-56
-48-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:19-53
-49        <activity
-49-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:39:9-42:66
-50            android:name="com.example.ccd.ForumEnroll"
-50-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:40:13-40
-51            android:label="@string/title_activity_forum_enroll"
-51-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:41:13-64
-52            android:theme="@style/Theme.MyTapTest.NoActionBar" /> <!-- <uses-library -->
-52-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:42:13-63
-53        <!-- android:name="com.google.android.wearable" -->
-54        <!-- android:required="true" /> -->
-55        <!--
-56               Set to true if your app is Standalone, that is, it does not require the handheld
-57               app to run.
-58        -->
-59        <meta-data
-59-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:49:9-51:36
-60            android:name="com.google.android.wearable.standalone"
-60-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:50:13-66
-61            android:value="true" />
-61-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:51:13-33
-62
-63        <activity
-63-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:53:9-56:20
-64            android:name="com.example.ccd.ForumContentLookup"
-64-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:54:13-47
-65            android:label="@string/title_activity_forum_content_lookup" >
-65-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:55:13-72
-66        </activity>
-67        <activity android:name="com.example.ccd.MainActivity" />
-67-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:57:9-50
-67-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:57:19-47
-68    </application>
-69
-70</manifest>
+25        android:theme="@style/Theme.MyTapTest"
+25-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:16:9-47
+26        android:usesCleartextTraffic="true" >
+26-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:17:9-44
+27        <activity android:name="com.example.ccd.bookStatusEnroll" />
+27-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:9-63
+27-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:19-51
+28        <activity android:name="com.example.ccd.NoticeContentLookup" />
+28-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:9-57
+28-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:19-54
+29        <activity android:name="com.example.ccd.notice" />
+29-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:9-44
+29-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:19-41
+30        <activity android:name="com.example.ccd.bsResult" />
+30-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:9-46
+30-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:19-43
+31        <activity android:name="com.example.ccd.bsSearch" />
+31-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:9-46
+31-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:19-43
+32        <activity android:name="com.example.ccd.login" >
+32-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:9-29:20
+32-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:19-40
+33            <intent-filter>
+33-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:24:13-28:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:17-69
+34-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:27:17-77
+36-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:27:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="com.example.ccd.signup" />
+39-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:30:9-44
+39-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:30:19-41
+40        <activity android:name="com.example.ccd.bookResult" />
+40-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:9-48
+40-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:19-45
+41        <activity android:name="com.example.ccd.search" />
+41-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:9-44
+41-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:19-41
+42        <activity android:name="com.example.ccd.bookInformation" />
+42-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:9-53
+42-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:19-50
+43        <activity android:name="com.example.ccd.MyInfo" />
+43-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:9-44
+43-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:19-41
+44        <activity android:name="com.example.ccd.bookDone" />
+44-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:9-46
+44-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:19-43
+45        <activity android:name="com.example.ccd.bookRead" />
+45-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:9-46
+45-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:19-43
+46        <activity android:name="com.example.ccd.bookStatus" />
+46-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:9-48
+46-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:19-45
+47        <activity android:name="com.example.ccd.commentEnrollPopup" />
+47-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:9-56
+47-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:19-53
+48        <activity
+48-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:39:9-42:66
+49            android:name="com.example.ccd.ForumEnroll"
+49-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:40:13-40
+50            android:label="@string/title_activity_forum_enroll"
+50-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:41:13-64
+51            android:theme="@style/Theme.MyTapTest.NoActionBar" /> <!-- <uses-library -->
+51-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:42:13-63
+52        <!-- android:name="com.google.android.wearable" -->
+53        <!-- android:required="true" /> -->
+54        <!--
+55               Set to true if your app is Standalone, that is, it does not require the handheld
+56               app to run.
+57        -->
+58        <meta-data
+58-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:49:9-51:36
+59            android:name="com.google.android.wearable.standalone"
+59-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:50:13-66
+60            android:value="true" />
+60-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:51:13-33
+61
+62        <activity
+62-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:53:9-56:20
+63            android:name="com.example.ccd.ForumContentLookup"
+63-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:54:13-47
+64            android:label="@string/title_activity_forum_content_lookup" >
+64-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:55:13-72
+65        </activity>
+66        <activity android:name="com.example.ccd.MainActivity" />
+66-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:57:9-50
+66-->C:\GitHub\ccd\app\src\main\AndroidManifest.xml:57:19-47
+67    </application>
+68
+69</manifest>

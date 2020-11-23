@@ -1,22 +1,56 @@
 package com.example.ccd.controller;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
+import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Member;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+
 
 public class booklikeHttp extends AsyncTask<String, String, String> {
+    String strUrl;
     String[] arr;
+
+    int reint;
+    String result;
+    String result1;
+    Context context;
+    JSONObject jsonObj;
+    JSONArray jarr;
+    String LoadData;
+
+    public booklikeHttp(String n, Context context) {
+        arr = n.split("/");
+        this.context = context;
+    }
+
+    public booklikeHttp(String n, View view) {
+        arr = n.split("/");
+        this.context = context;
+    }
+
     public booklikeHttp(String n) {
         arr = n.split("/");
     }
@@ -28,14 +62,15 @@ public class booklikeHttp extends AsyncTask<String, String, String> {
 
     @Override
     protected String doInBackground(String... voids) {
+        //jarr 생성자는 삭제요망
+        jarr = new JSONArray();
         HttpURLConnection conn;
         try {
             String str = "http://";
             String ip = Value.ip;
-            str = str + ip + "8080/booklike.jsp";
+            str = str + ip + ":8080/bookLike.jsp";
             System.out.println(str);
             URL url = new URL(str);
-            //URLConnection con = url.openConnection();
 //            // HTTP 접속 구하기
             conn = (HttpURLConnection) url.openConnection();
             conn.setAllowUserInteraction(true);
@@ -59,6 +94,7 @@ public class booklikeHttp extends AsyncTask<String, String, String> {
             conn.setRequestProperty("Cache-Control", "no-cache");
             conn.setRequestProperty("Content-Type", "application/json");
             conn.setRequestProperty("Accept", "application/json");
+            //여기까진 똑같음
 
             // 요청 파라미터 출력
             // - 파라미터는 쿼리 문자열의 형식으로 지정 (ex) 이름=값&이름=값 형식&...
@@ -66,8 +102,9 @@ public class booklikeHttp extends AsyncTask<String, String, String> {
 
             try (OutputStream out = conn.getOutputStream()) {
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("id", arr[0]);
-                jsonObject.put("pw", arr[1]);
+                jsonObject.put("bookName", arr[0]);
+                jsonObject.put("writer", arr[1]);
+                //memberID 추가
 
                 out.write(jsonObject.toString().getBytes());
                 out.flush();
@@ -76,6 +113,32 @@ public class booklikeHttp extends AsyncTask<String, String, String> {
             } catch (IOException ioException) {
                 ioException.printStackTrace();
             }
+
+            // 응답 내용(BODY) 구하기
+//            int responseCode = conn.getResponseCode();
+//
+//            ByteArrayOutputStream baos = null;
+//            InputStream is = null;
+//            String responseStr = null;
+//
+//
+//            if (responseCode == HttpURLConnection.HTTP_OK) {
+//                is = conn.getInputStream();
+//                baos = new ByteArrayOutputStream();
+//                byte[] byteBuffer = new byte[1024];
+//                byte[] byteData = null;
+//                int nLength = 0;
+//                while ((nLength = is.read(byteBuffer, 0, byteBuffer.length)) != -1) {
+//                    baos.write(byteBuffer, 0, nLength);
+//                }
+//                byteData = baos.toByteArray();
+//
+//                responseStr = new String(byteData);
+//
+//                JSONObject responseJSON = new JSONObject(responseStr);
+//                //json데이터가 Map같은 형식일 때
+//                jarr =  responseJSON.getJSONArray("like");
+//            }
             // 접속 해제
             conn.disconnect();
         } catch (MalformedURLException e) {
@@ -85,13 +148,21 @@ public class booklikeHttp extends AsyncTask<String, String, String> {
         } catch (ProtocolException e) {
             e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrace();
-        }
+            e.printStackTrace();}
+//         catch (JSONException e) {
+//            e.printStackTrace();
+//        }
         return null;
     }
 
     @Override
     protected void onPostExecute(String aVoid) {
         super.onPostExecute(aVoid);
+
+        try {
+            Toast.makeText(context, jarr.getJSONObject(0).toString(), Toast.LENGTH_SHORT).show();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }

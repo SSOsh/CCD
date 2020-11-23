@@ -95,6 +95,7 @@ public class loginHttp extends AsyncTask<String, String, String> {
                 jsonObject.put("pw", arr[1]);
 
                 out.write(jsonObject.toString().getBytes());
+                System.out.println(jsonObject.toString());
                 out.flush();
             } catch (JSONException e) {
                 e.printStackTrace();

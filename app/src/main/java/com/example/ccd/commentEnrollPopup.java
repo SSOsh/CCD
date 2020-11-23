@@ -38,15 +38,16 @@ public class commentEnrollPopup extends AppCompatActivity {
                 //등록
                 //json 변환
                 String comment = enrollComment.getText().toString();
+                //memberID 추가
                 String result = comment;
 
                 try {
                     jsonObject.put("comment", comment);
+                    //memberID 추가
                 } catch(JSONException e) {
                     e.printStackTrace();
                 }
 
-                jsonObject.toString();
                 commentEnrollHttp hc = new commentEnrollHttp(result);
                 hc.execute();
 

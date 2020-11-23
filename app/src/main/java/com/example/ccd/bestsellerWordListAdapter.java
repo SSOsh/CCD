@@ -2,10 +2,14 @@ package com.example.ccd;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
@@ -21,6 +25,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class bestsellerWordListAdapter  extends RecyclerView.Adapter<bestsellerWordListAdapter.bestsellerWordViewHolder> {
     private ArrayList<bestsellerData> bsData = new ArrayList<>();
@@ -52,7 +57,7 @@ public class bestsellerWordListAdapter  extends RecyclerView.Adapter<bestsellerW
 
     class bestsellerWordViewHolder extends RecyclerView.ViewHolder {
         public final TextView bsTitle, bsauthor, bsStarRating;
-//        public final EditText editText;
+        //        public final EditText editText;
         public final ImageView bsImg;
         public final Button bsGoBookInfoBtn;
         public final ToggleButton bsLike_toggle;
@@ -67,7 +72,7 @@ public class bestsellerWordListAdapter  extends RecyclerView.Adapter<bestsellerW
             bsImg = itemView.findViewById(R.id.bsBookCoverImg);
             bsGoBookInfoBtn = itemView.findViewById(R.id.bsGoBookInfoBtn);
             bsLike_toggle = itemView.findViewById(R.id.bsLike_toggle);
-            
+
             //json 변환
             final JSONObject jsonObject = new JSONObject();
             bsGoBookInfoBtn.setOnClickListener(new View.OnClickListener(){
@@ -75,32 +80,37 @@ public class bestsellerWordListAdapter  extends RecyclerView.Adapter<bestsellerW
                 public void onClick(View view) {
                     String title = bsTitle.getText().toString();
                     String author = bsauthor.getText().toString();
-                    String starRate = bsStarRating.getText().toString();
-                    String img = bsImg.getResources().toString();
-                    String result = title + "/" + author + "/" + starRate + "/" + img;
+                    String result = title + "/" + author;
 
                     try {
                         jsonObject.put("title", title);
                         jsonObject.put("author", author);
-                        jsonObject.put("starRate", starRate);
-                        jsonObject.put("img", img);
                     } catch(JSONException e) {
                         e.printStackTrace();
                     }
 
-                    jsonObject.toString();
                     bsBookInfoHttp hc = new bsBookInfoHttp(result);
                     hc.execute();
 
-                    String str = "";
-                    Context context = view.getContext();
-                    Intent intent = new Intent(context, bookInformation.class);
-                    intent.putExtra("bsTitle", bsTitle.getText());
-                    intent.putExtra("bsauthor", bsauthor.getText());
-                    intent.putExtra("bsStarRating", bsStarRating.getText());
-                    intent.putExtra("bsImg", bsImg.toString());
+                    try {
+                        String arr[] = hc.get().split("/");
 
-                    context.startActivity(intent);
+                        Context context = view.getContext();
+//                    Intent intentWeb = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+                        Intent intent = new Intent(view.getContext(), bookInformation.class);
+                        intent.putExtra("bookTitle", arr[0]);
+                        intent.putExtra("author", arr[1]);
+                        intent.putExtra("starRating", arr[2]);
+                        intent.putExtra("table", arr[3]);
+                        intent.putExtra("summarize", arr[4]);
+                        intent.putExtra("bookcoverUrl", arr[5]);
+
+                        context.startActivity(intent);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    }
                 }
             });
 
@@ -112,18 +122,17 @@ public class bestsellerWordListAdapter  extends RecyclerView.Adapter<bestsellerW
                         //json 변환
                         JSONObject jso = new JSONObject();
 
-                        String title = bsTitle.getText().toString();
+                        String bookName = bsTitle.getText().toString();
                         String writer = bsauthor.getText().toString();
-                        String result = title + "/" + writer;
+                        String result = bookName + "/" + writer;
 
                         try {
-                            jso.put("title", title);
+                            jso.put("bookName", bookName);
                             jso.put("writer", writer);
                         } catch(JSONException e) {
                             e.printStackTrace();
                         }
 
-                        jso.toString();
                         bsBookLikeHttp hc = new bsBookLikeHttp(result);
                         hc.execute();
                     }
@@ -132,17 +141,17 @@ public class bestsellerWordListAdapter  extends RecyclerView.Adapter<bestsellerW
                         JSONObject json = new JSONObject();
 
                         String title = bsTitle.getText().toString();
-                        String writer = bsauthor.getText().toString();
-                        String result = title + "/" + writer;
+                        String author = bsauthor.getText().toString();
+                        //userID 추가
+                        String result = title + "/" + author;
 
                         try {
                             json.put("title", title);
-                            json.put("writer", writer);
+                            json.put("author", author);
                         } catch(JSONException e) {
                             e.printStackTrace();
                         }
 
-                        json.toString();
                         bookDislikeHttp hc = new bookDislikeHttp(result);
                         hc.execute();
                     }

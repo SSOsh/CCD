@@ -13,21 +13,81 @@ import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.ccd.controller.forumRowHttp;
+import com.example.ccd.controller.postLookupHttp;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.concurrent.ExecutionException;
+
 public class ForumFragment extends Fragment {
-    TextView tableId1, tableContent1, tableDate1, tv_result;
-    TableRow tableRow1, tableRow2;
+    TextView tableId1, tableContent1, tableDate1;
+    TableRow tableRow2;
     Button writeBtn;
     TableLayout forumTable;
-
+    TextView t1,t2,t3;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = (View)inflater.inflate(R.layout.fragment_forum, container, false);
+
+
+        forumTable = (TableLayout)view.findViewById(R.id.forumTable);
+
+        //값넣기
+        postLookupHttp pl = new postLookupHttp();
+        pl.execute();
+
+        try {
+            JSONObject object = new JSONObject(pl.get());
+            JSONArray jarr = object.getJSONArray("postLookup");
+            int leng = jarr.length();
+            for(int i=0;i < leng;i++) {
+                JSONObject tmp = (JSONObject)jarr.get(i);
+                String memberID = (String)tmp.get("memberID");
+                String contents = (String)tmp.get("title");
+                String date = tmp.get("date").toString().substring(0,5);
+
+                t1 = new TextView(view.getContext());
+                t2 = new TextView(view.getContext());
+                t3 = new TextView(view.getContext());
+                t1.setText(memberID);
+                t2.setText(contents);
+                t3.setText(date);
+                System.out.println(memberID + contents + date);
+                TableRow trow = new TableRow(view.getContext());
+                trow.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                trow.addView(t1);
+                trow.addView(t2);
+                trow.addView(t3);
+                forumTable.addView(trow);
+                trow.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        TableRow tablerow = (TableRow) view;
+                        String memberID=((TextView) tablerow.getChildAt(0)).getText().toString();
+                        String contents=((TextView) tablerow.getChildAt(1)).getText().toString();
+                        String date=((TextView) tablerow.getChildAt(2)).getText().toString();
+
+                        Intent intent = new Intent(getActivity(), ForumContentLookup.class);
+                        intent.putExtra("memberID", memberID);
+                        intent.putExtra("contents", contents);
+                        intent.putExtra("date", date);
+                        startActivity(intent);
+                    }
+                });
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
 
         //게시물 등록 버튼
         writeBtn = (Button)view.findViewById(R.id.writeBtn);
@@ -37,42 +97,6 @@ public class ForumFragment extends Fragment {
                 //ForumEnroll으로 이동
                 Intent intent = new Intent(getActivity(), ForumEnroll.class);
                 startActivity(intent);
-            }
-        });
-
-        //tableRow 클릭 시 해당 게시물로 이동
-        forumTable = (TableLayout)view.findViewById(R.id.forumTable);
-        tableId1 = (TextView)view.findViewById(R.id.tableId1);
-        tableContent1 = (TextView)view.findViewById(R.id.tableContent1);
-        tableDate1 = (TextView)view.findViewById(R.id.tableDate1);
-
-        tableRow2 = (TableRow)view.findViewById(R.id.tableRow2);
-        final JSONObject jsonObject = new JSONObject();
-        tableRow2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //게시물로 이동
-                //디비 연결 시에는 작성자와 내용? 등 동일한 게시물과 연결
-                //json 변환
-                String tId = tableId1.getText().toString();
-                String tContent = tableContent1.getText().toString();
-                String tDate = tableDate1.getText().toString();
-                String result = tId + "/" + tContent + "/" + tDate;
-
-                try {
-                    jsonObject.put("tId", tId);
-                    jsonObject.put("tContent", tContent);
-                    jsonObject.put("tDate", tDate);
-                } catch(JSONException e) {
-                    e.printStackTrace();
-                }
-
-                jsonObject.toString();
-                forumRowHttp hc = new forumRowHttp(result);
-                hc.execute();
-
-                Intent contentIntent = new Intent(getActivity(), ForumContentLookup.class);
-                startActivity(contentIntent);
             }
         });
 

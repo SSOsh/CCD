@@ -15,6 +15,7 @@ import java.net.URL;
 public class forumRowHttp extends AsyncTask<String, String, String> {
     String strUrl;
     String arr;
+
     public forumRowHttp(String n) {
         arr = n;
     }

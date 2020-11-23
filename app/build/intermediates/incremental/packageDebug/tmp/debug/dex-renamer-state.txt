@@ -1,4 +1,4 @@
-#Mon Nov 23 12:32:26 KST 2020
+#Mon Nov 23 13:17:59 KST 2020
 base.0=C\:\\GitHub\\ccd\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

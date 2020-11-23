@@ -34,10 +34,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" afterDir="false" />
@@ -149,7 +152,9 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
@@ -159,36 +164,41 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/ccd/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/ccd/MainActivity.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/ForumEnroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/ForumEnroll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/MyInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/MyInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/ForumFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/ForumFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/WordListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/WordListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bestsellerWordListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bestsellerWordListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bookInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bookInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bookReadWordListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bookReadWordListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bookStatusWordListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bookStatusWordListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bsResultWordListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bsResultWordListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bsSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/bsSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/commentEnrollPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/commentEnrollPopup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/commentWordListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/commentWordListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookDislikeHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookDislikeHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookDoneHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookDoneHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookInfoHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookInfoHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookPurchaseHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookPurchaseHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookReadHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookReadHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookStatusHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bookStatusHttp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/booklikeHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/booklikeHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/disLikeHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/disLikeHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/forumRowHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/forumRowHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/homeHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/homeHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/likeHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/likeHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsBookInfoHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsBookInfoHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsBookLikeHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsBookLikeHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsDislikeHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsDislikeHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsSearchBookInfoHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsSearchBookInfoHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsSearchHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/bsSearchHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/commentDeleteHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/commentDeleteHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/commentEnrollHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/commentEnrollHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/commentModifyHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/commentModifyHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/forumRowHttp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/loginHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/loginHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/myInfoHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/myInfoHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/noticeRowHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/noticeRowHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/postDeleteHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/postDeleteHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/postEnrollHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/postEnrollHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/postModifyHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/postModifyHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/searchBookInfoHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/searchBookInfoHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/searchHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/searchHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/signupHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/signupHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/statusEnrollHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/controller/statusEnrollHttp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/homeWordListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/homeWordListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/likeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/likeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/likeWordListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/likeWordListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ccd/signup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forum_enroll.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forum_enroll.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/like_recycler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/like_recycler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sign_up.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_forum.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_forum.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,20 +252,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/MyTapTest (2)(best)/MyTapTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/example/ccd" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitHub\ccd\app\src\main\res\drawable" />
-      <recent name="C:\GitHub\ccd\app\src\main\res\layout" />
-      <recent name="C:\GitHub\ccd\app\src\main\res" />
-      <recent name="C:\GitHub\ccd\app\src\main\java\com\example\ccd" />
-      <recent name="C:\GitHub\ccd\app\src\main\java\com\example\ccd\controller" />
-    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.ccd" />
     </key>
@@ -270,6 +273,13 @@
       <recent name="C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\res\drawable" />
       <recent name="C:\Users\ATIV\Documents\GitHub\CCD\app\src\main\res\layout" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\ccd\app\src\main\java\com\example\ccd" />
+      <recent name="C:\GitHub\ccd\app\src\main\java\com\example\ccd\controller" />
+      <recent name="C:\GitHub\ccd\app\src\main\res\drawable" />
+      <recent name="C:\GitHub\ccd\app\src\main\res\layout" />
+      <recent name="C:\GitHub\ccd\app\src\main\res" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -282,7 +292,7 @@
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="CCD.app" />
       <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="true" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
@@ -367,10 +377,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1053" y="100" width="774" height="840" key="AVDManager" timestamp="1606061971152">
+    <state x="0" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606105625944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1053" y="100" width="774" height="840" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1606061971152" />
+    <state x="0" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606105625944" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1606113675281">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606113675281" />
+    <state x="1053" y="100" width="774" height="840" key="AVDManager" timestamp="1606114768466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1053" y="100" width="774" height="840" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1606114768466" />
     <state x="1020" y="278" key="AndroidCreateResourceDirectoryDialog" timestamp="1606048701186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -383,21 +401,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606052884535" />
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1606102346285">
+    <state width="914" height="289" key="GridCell.Tab.0.bottom" timestamp="1606116715741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606102346285" />
-    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1606102346285">
+    <state width="914" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606116715741" />
+    <state width="914" height="289" key="GridCell.Tab.0.center" timestamp="1606116715741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606102346285" />
-    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1606102346285">
+    <state width="914" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606116715741" />
+    <state width="914" height="289" key="GridCell.Tab.0.left" timestamp="1606116715741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606102346285" />
-    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1606102346285">
+    <state width="914" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606116715741" />
+    <state width="914" height="289" key="GridCell.Tab.0.right" timestamp="1606116715741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606102346285" />
+    <state width="914" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606116715741" />
+    <state x="662" y="328" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog" timestamp="1606114755214">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="328" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606114755214" />
   </component>
 </project>

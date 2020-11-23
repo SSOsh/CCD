@@ -67,25 +67,22 @@ public class bookReadWordListAdapter extends RecyclerView.Adapter<bookReadWordLi
                     //json 변환
                     String title = bingTitle.getText().toString();
                     String author = bingAuthor.getText().toString();
-                    String img = bingImg.getResources().toString();
-                    String result = title + "/" + author + "/" + img;
+                    String oldStatus = "읽는 중";
+                    String result = title + "/" + author + "/" + oldStatus;
 
                     try {
                         jsonObject.put("title", title);
                         jsonObject.put("author", author);
-                        jsonObject.put("img", img);
+                        jsonObject.put("oldStatus", oldStatus);
+                        //memberID 추가
                     } catch(JSONException e) {
                         e.printStackTrace();
                     }
 
-                    jsonObject.toString();
                     bookReadHttp hc = new bookReadHttp(result);
                     hc.execute();
 
                     Intent goDoneIntent = new Intent(itemView.getContext(), bookDone.class);
-                    goDoneIntent.putExtra("bingTitle", bingTitle.toString());
-                    goDoneIntent.putExtra("bingAuthor", bingAuthor.toString());
-                    goDoneIntent.putExtra("bingImg", bingImg.toString());
                     itemView.getContext().startActivity(goDoneIntent);
                 }
             });

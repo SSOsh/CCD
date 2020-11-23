@@ -2,6 +2,7 @@ package com.example.ccd;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,12 +11,13 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.ccd.controller.bsSearchHttp;
+import com.example.ccd.controller.searchHttp;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class bsSearch extends AppCompatActivity {
     ArrayList<bsSearchData> bsDataList;
@@ -41,23 +43,35 @@ public class bsSearch extends AppCompatActivity {
             public void onClick(View view) {
                 //검색 내용
                 //json 변환
-                String text = bsSearchText.getText().toString();
-                String result = text;
+                String sText = bsSearchText.getText().toString();
+                String result = sText;
 
                 try {
-                    jsonObject.put("text", text);
+                    jsonObject.put("sText", sText);
                 } catch(JSONException e) {
                     e.printStackTrace();
                 }
 
-                jsonObject.toString();
-                bsSearchHttp hc = new bsSearchHttp(result);
+                searchHttp hc = new searchHttp(result);
                 hc.execute();
 
-                //검색 결과 호출
-                Intent intent = new Intent(bsSearch.this, bsResult.class);
-                intent.putExtra("bsSearchText",bsSearchText.getText().toString());
-                startActivity(intent);
+                try {
+                    String arr[] = hc.get().split("/");
+
+                    Context context = view.getContext();
+//                    Intent intentWeb = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+                    Intent intent = new Intent(view.getContext(), bookResult.class);
+                    intent.putExtra("bookTitle", arr[0]);
+                    intent.putExtra("author", arr[1]);
+                    intent.putExtra("starRating", arr[2]);
+                    intent.putExtra("bookcoverUrl", arr[3]);
+
+                    context.startActivity(intent);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
         });
 

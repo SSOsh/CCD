@@ -67,8 +67,8 @@ public class bookDoneHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "192.168.43.37:8080/";
-            str = str + ip + "login.jsp";
+            String ip = Value.ip;
+            str = str + ip + ":8080/bookDone.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기

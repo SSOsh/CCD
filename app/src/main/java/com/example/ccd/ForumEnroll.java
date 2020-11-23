@@ -79,17 +79,18 @@ public class ForumEnroll extends AppCompatActivity {
                 TextView mText = new TextView(getApplicationContext());
                 TextView dText = new TextView(getApplicationContext());
 
-                //추가
-                tText.setText(fTitle);
-                tableRow.addView(tText);
-                teText.setText(fText);
-                tableRow.addView(teText);
-                mText.setText(fMem);
-                tableRow.addView(mText);
-                dText.setText(fDate);
-                tableRow.addView(dText);
-
-                ff.forumTable.addView(tableRow);
+//                //추가
+//                tText.setText(fTitle);
+//                tableRow.addView(tText);
+//                teText.setText(fText);
+//                tableRow.addView(teText);
+//                mText.setText(fMem);
+//                tableRow.addView(mText);
+//                dText.setText(fDate);
+//                tableRow.addView(dText);
+//
+//                System.out.println(ff.forumTable.getScaleX());
+//                ff.forumTable.addView(tableRow);
                 
                 //json 변환
                 String result = fMem + "/" + fTitle + "/" + fText;

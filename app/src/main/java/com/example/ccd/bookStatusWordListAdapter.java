@@ -75,25 +75,22 @@ public class bookStatusWordListAdapter extends RecyclerView.Adapter<bookStatusWo
                     //json 변환
                     String title = bspTitle.getText().toString();
                     String author = bspAuthor.getText().toString();
-                    String img = bspImg.getResources().toString();
-                    String result = title + "/" + author + "/" + img;
+                    String oldStatus = "읽을 책";
+                    //memberID 추가
+                    String result = title + "/" + author + "/" + oldStatus;
 
                     try {
                         jsonObject.put("title", title);
                         jsonObject.put("author", author);
-                        jsonObject.put("img", img);
+                        jsonObject.put("oldStatus", oldStatus);
                     } catch(JSONException e) {
                         e.printStackTrace();
                     }
 
-                    jsonObject.toString();
                     bookStatusHttp hc = new bookStatusHttp(result);
                     hc.execute();
 
                     Intent goReadIntent = new Intent(view.getContext(), bookRead.class);
-                    goReadIntent.putExtra("bspTitle", bspTitle.toString());
-                    goReadIntent.putExtra("bspAuthor", bspAuthor.toString());
-                    goReadIntent.putExtra("bspImg", bspImg.toString());
                     view.getContext().startActivity(goReadIntent);
                 }
             });

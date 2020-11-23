@@ -3,6 +3,7 @@ package com.example.ccd;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,10 +11,13 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import com.example.ccd.controller.bookPurchaseHttp;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
 
 public class bookInformation extends AppCompatActivity {
     TextView booktitleInfo, authorName, starRatingInfo, table, authorInfo;
@@ -77,9 +81,19 @@ public class bookInformation extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                jsonObject.toString();
                 bookPurchaseHttp hc = new bookPurchaseHttp(result);
                 hc.execute();
+
+                try {
+                    String st = hc.get();
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(st));
+                    startActivity(intent);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
+
             }
         });
     }

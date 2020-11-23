@@ -67,8 +67,8 @@ public class bookDislikeHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "192.168.43.37:8080/";
-            str = str + ip + "login.jsp";
+            String ip = Value.ip;
+            str = str + ip + ":8080/bookDislike.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -103,6 +103,7 @@ public class bookDislikeHttp extends AsyncTask<String, String, String> {
             try (OutputStream out = conn.getOutputStream()) {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("bookName", arr[0]);
+                jsonObject.put("author", arr[1]);
                 //userID 추가
 
                 out.write(jsonObject.toString().getBytes());
@@ -165,3 +166,4 @@ public class bookDislikeHttp extends AsyncTask<String, String, String> {
         }
     }
 }
+
