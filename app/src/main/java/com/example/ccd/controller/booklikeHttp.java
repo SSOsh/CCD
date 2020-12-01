@@ -67,8 +67,8 @@ public class booklikeHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "172.30.1.2:8080/";
-            str = str + ip + "bookLike.jsp";
+            String ip = Value.ip;
+            str = str + ip + ":8080/bookLike.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -103,7 +103,7 @@ public class booklikeHttp extends AsyncTask<String, String, String> {
             try (OutputStream out = conn.getOutputStream()) {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("bookName", arr[0]);
-                jsonObject.put("writer", arr[1]);
+                jsonObject.put("author", arr[1]);
                 jsonObject.put("memberID", arr[2]);
 
                 out.write(jsonObject.toString().getBytes());
@@ -115,30 +115,39 @@ public class booklikeHttp extends AsyncTask<String, String, String> {
             }
 
             // 응답 내용(BODY) 구하기
-//            int responseCode = conn.getResponseCode();
-//
-//            ByteArrayOutputStream baos = null;
-//            InputStream is = null;
-//            String responseStr = null;
-//
-//
-//            if (responseCode == HttpURLConnection.HTTP_OK) {
-//                is = conn.getInputStream();
-//                baos = new ByteArrayOutputStream();
-//                byte[] byteBuffer = new byte[1024];
-//                byte[] byteData = null;
-//                int nLength = 0;
-//                while ((nLength = is.read(byteBuffer, 0, byteBuffer.length)) != -1) {
-//                    baos.write(byteBuffer, 0, nLength);
-//                }
-//                byteData = baos.toByteArray();
-//
-//                responseStr = new String(byteData);
-//
-//                JSONObject responseJSON = new JSONObject(responseStr);
-//                //json데이터가 Map같은 형식일 때
-//                jarr =  responseJSON.getJSONArray("like");
-//            }
+            int responseCode = conn.getResponseCode();
+
+            ByteArrayOutputStream baos = null;
+            InputStream is = null;
+            String responseStr = null;
+
+
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+                is = conn.getInputStream();
+                baos = new ByteArrayOutputStream();
+                byte[] byteBuffer = new byte[1024];
+                byte[] byteData = null;
+                int nLength = 0;
+                while ((nLength = is.read(byteBuffer, 0, byteBuffer.length)) != -1) {
+                    baos.write(byteBuffer, 0, nLength);
+                }
+                byteData = baos.toByteArray();
+
+                responseStr = new String(byteData);
+
+                JSONObject responseJSON = new JSONObject(responseStr);
+                //json데이터가 Map같은 형식일 때
+                jarr =  responseJSON.getJSONArray("bookLike");
+
+                //파싱
+                String title, author, starRating, table, summarize, bookcoverUrl;
+                System.out.println(jarr.length());
+                for(int i=0;i<jarr.length();i++) {
+                    JSONObject obj = jarr.getJSONObject(i);
+
+                    result = obj.getString("result");
+                }
+            }
             // 접속 해제
             conn.disconnect();
         } catch (MalformedURLException e) {
@@ -148,21 +157,14 @@ public class booklikeHttp extends AsyncTask<String, String, String> {
         } catch (ProtocolException e) {
             e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrace();}
-//         catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-        return null;
+            e.printStackTrace();} catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 
     @Override
     protected void onPostExecute(String aVoid) {
         super.onPostExecute(aVoid);
-
-        try {
-            Toast.makeText(context, jarr.getJSONObject(0).toString(), Toast.LENGTH_SHORT).show();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
     }
 }

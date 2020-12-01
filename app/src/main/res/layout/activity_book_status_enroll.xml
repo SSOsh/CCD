@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#eeeeee"
     android:orientation="vertical"
-    android:layout_width="300dp"
-    android:layout_height="wrap_content">
+    android:layout_width="400dp"
+    android:layout_height="235dp">
 
     <!-- 타이틀바 -->
     <LinearLayout
@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#F5A9BC"
-            android:gravity="center"
+            android:textAlignment="center"
             android:text="독서 상황 등록"
             android:textColor="#fff"
             android:textSize="20sp" />
@@ -39,9 +39,9 @@
 
         <EditText
             android:id="@+id/enrollTitle"
-            android:layout_width="249dp"
+            android:layout_width="346dp"
             android:layout_height="wrap_content"
-            android:hint="댓글을 입력하세요."
+            android:hint="책 제목을 입력하세요."
             android:textSize="15dp" />
 
         <TextView
@@ -54,9 +54,9 @@
 
         <EditText
             android:id="@+id/enrollAuthor"
-            android:layout_width="249dp"
+            android:layout_width="346dp"
             android:layout_height="wrap_content"
-            android:hint="댓글을 입력하세요."
+            android:hint="저자를 입력하세요."
             android:textSize="15dp" />
 
     </LinearLayout>

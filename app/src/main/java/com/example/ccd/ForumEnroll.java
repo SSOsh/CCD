@@ -104,6 +104,7 @@ public class ForumEnroll extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                System.out.println(result);
                 if(result.equals("success")) {
                     Toast.makeText(getApplicationContext(), "등록되었습니다.", Toast.LENGTH_SHORT).show();
                     finish();

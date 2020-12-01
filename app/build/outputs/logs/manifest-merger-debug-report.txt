@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-60:12
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-64:12
 MERGED from [androidx.navigation:navigation-ui:2.2.2] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\7478c4a604ec435ce56a92093b5076eb\navigation-ui-2.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\a1ec39e5a37eebee4d1a41e1ef28c58f\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.wear:wear:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\a2126f597e06560bb4fe0e8ad0d531f4\wear-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -11,6 +11,7 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\tngh1\.g
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\a16db5b44425ecffd4781fb791b0f708\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\5c75bd7951d359a85775620c0170e49e\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.2.2] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\8a665fdc72072537ead346732fa1c72e\navigation-fragment-2.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\ca29aad5a7d82accca94d4b06e58ec67\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\92f8e3eea2413f9234d57f836e040f22\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\aace0d5da73d2c817f12bb96d6698e5c\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\980692226c1ccbca5d66fbb4efeabccb\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -35,6 +36,7 @@ MERGED from [androidx.navigation:navigation-runtime:2.2.2] C:\Users\tngh1\.gradl
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\d76bdbfbc13c44ef68b61971d9cabdc1\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-common:2.2.2] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\5ef3b1622197de2109e64213bb1ed19b\navigation-common-2.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.3.1] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\c24177ae83091978e5c4ae83bccf2f01\core-1.3.1\AndroidManifest.xml:17:1-26:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\e8ab078e12e364f6df4892b26a9f5389\jetified-gifdecoder-4.9.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\929ec10604c047a76453df3294ada6ae\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\1d3d300991201f0272c309154f6a5e44\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\b483c59108b83b2c001374a9e1131636\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -48,20 +50,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\tngh1\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\becbcdb90dd6658fa9922119d9ed69f9\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\1cfd2abfffba474819c6ba886bdc15c5\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\257179ec940acce9d9b9b9069652d215\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-64:12
 	package
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml
 		INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-60:12
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-64:12
 		INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-60:12
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:1-64:12
 		INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:2:11-69
@@ -78,13 +80,17 @@ ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:8:5-64
 	android:name
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:8:19-61
 application
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:10:5-58:19
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:10:5-62:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\a1ec39e5a37eebee4d1a41e1ef28c58f\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\a1ec39e5a37eebee4d1a41e1ef28c58f\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\92c0dc38ab14236f7b6eba66cf79139b\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\92c0dc38ab14236f7b6eba66cf79139b\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\ca29aad5a7d82accca94d4b06e58ec67\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\ca29aad5a7d82accca94d4b06e58ec67\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.core:core:1.3.1] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\c24177ae83091978e5c4ae83bccf2f01\core-1.3.1\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.3.1] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\c24177ae83091978e5c4ae83bccf2f01\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\e8ab078e12e364f6df4892b26a9f5389\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\e8ab078e12e364f6df4892b26a9f5389\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\929ec10604c047a76453df3294ada6ae\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\929ec10604c047a76453df3294ada6ae\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
@@ -104,103 +110,109 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tn
 	android:usesCleartextTraffic
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:17:9-44
 activity#com.example.ccd.commentModifyPopup
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:9-65
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:9-19:85
+	android:theme
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:13-73
 	android:name
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:18:19-53
 activity#com.example.ccd.bookStatusEnroll
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:9-54
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:9-21:75
+	android:theme
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:13-73
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:19:19-51
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:19-51
 activity#com.example.ccd.NoticeContentLookup
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:9-57
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:9-57
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:20:19-54
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:19-54
 activity#com.example.ccd.notice
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:9-44
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:9-44
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:21:19-41
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:19-41
 activity#com.example.ccd.bsResult
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:9-46
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:24:9-46
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:22:19-43
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:24:19-43
 activity#com.example.ccd.bsSearch
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:9-46
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:9-46
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:23:19-43
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:19-43
 activity#com.example.ccd.login
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:24:9-30:20
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:26:9-32:20
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:24:19-40
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:26:19-40
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:30:27-74
 activity#com.example.ccd.signup
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:9-44
-	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:31:19-41
-activity#com.example.ccd.bookResult
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:9-48
-	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:32:19-45
-activity#com.example.ccd.search
 ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:9-44
 	android:name
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:33:19-41
-activity#com.example.ccd.bookInformation
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:9-53
+activity#com.example.ccd.bookResult
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:9-48
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:19-50
-activity#com.example.ccd.MyInfo
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:34:19-45
+activity#com.example.ccd.search
 ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:9-44
 	android:name
 		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:35:19-41
+activity#com.example.ccd.bookInformation
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:9-53
+	android:name
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:19-50
+activity#com.example.ccd.MyInfo
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:9-44
+	android:name
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:19-41
 activity#com.example.ccd.bookDone
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:9-46
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:9-46
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:36:19-43
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:19-43
 activity#com.example.ccd.bookRead
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:9-46
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:39:9-46
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:37:19-43
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:39:19-43
 activity#com.example.ccd.bookStatus
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:9-48
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:40:9-48
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:38:19-45
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:40:19-45
 activity#com.example.ccd.commentEnrollPopup
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:39:9-56
-	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:39:19-53
-activity#com.example.ccd.ForumEnroll
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:40:9-43:66
-	android:label
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:42:13-64
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:41:9-42:75
 	android:theme
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:43:13-63
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:42:13-73
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:41:13-40
-meta-data#com.google.android.wearable.standalone
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:50:9-52:36
-	android:value
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:52:13-33
-	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:51:13-66
-activity#com.example.ccd.ForumContentLookup
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:54:9-56:84
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:41:19-53
+activity#com.example.ccd.ForumEnroll
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:43:9-46:66
 	android:label
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:56:13-72
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:45:13-64
+	android:theme
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:46:13-63
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:55:13-47
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:44:13-40
+meta-data#com.google.android.wearable.standalone
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:53:9-55:36
+	android:value
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:55:13-33
+	android:name
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:54:13-66
+activity#com.example.ccd.ForumContentLookup
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:57:9-59:84
+	android:label
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:59:13-72
+	android:name
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:58:13-47
 activity#com.example.ccd.MainActivity
-ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:57:9-50
+ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:61:9-50
 	android:name
-		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:57:19-47
+		ADDED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml:61:19-47
 uses-sdk
 INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\GitHub\ccd\app\src\main\AndroidManifest.xml
@@ -219,6 +231,8 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tngh1\.gradle\cac
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\5c75bd7951d359a85775620c0170e49e\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-fragment:2.2.2] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\8a665fdc72072537ead346732fa1c72e\navigation-fragment-2.2.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.2.2] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\8a665fdc72072537ead346732fa1c72e\navigation-fragment-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\ca29aad5a7d82accca94d4b06e58ec67\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\ca29aad5a7d82accca94d4b06e58ec67\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\92f8e3eea2413f9234d57f836e040f22\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\92f8e3eea2413f9234d57f836e040f22\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\aace0d5da73d2c817f12bb96d6698e5c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -267,6 +281,8 @@ MERGED from [androidx.navigation:navigation-common:2.2.2] C:\Users\tngh1\.gradle
 MERGED from [androidx.navigation:navigation-common:2.2.2] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\5ef3b1622197de2109e64213bb1ed19b\navigation-common-2.2.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.1] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\c24177ae83091978e5c4ae83bccf2f01\core-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.1] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\c24177ae83091978e5c4ae83bccf2f01\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\e8ab078e12e364f6df4892b26a9f5389\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\e8ab078e12e364f6df4892b26a9f5389\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\929ec10604c047a76453df3294ada6ae\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\929ec10604c047a76453df3294ada6ae\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tngh1\.gradle\caches\transforms-2\files-2.1\1d3d300991201f0272c309154f6a5e44\documentfile-1.0.0\AndroidManifest.xml:20:5-44

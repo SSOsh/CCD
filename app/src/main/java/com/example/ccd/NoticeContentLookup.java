@@ -24,6 +24,10 @@ public class NoticeContentLookup extends AppCompatActivity {
         noticeTitleText = findViewById(R.id.noticeTitleText);
         noticeContentText = findViewById(R.id.noticeContentText);
 
+        noticeTitleText.setText(intent.getStringExtra("title"));
+        noticeDate.setText(intent.getStringExtra("date"));
+        noticeContentText.setText(intent.getStringExtra("content"));
+
         noticeListBtn = findViewById(R.id.noticeListBtn);
         noticeListBtn.setOnClickListener(new View.OnClickListener() {
             @Override

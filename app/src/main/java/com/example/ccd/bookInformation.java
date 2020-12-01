@@ -53,7 +53,7 @@ public class bookInformation extends AppCompatActivity {
         bSumI = intent.getExtras().getString("summarize");
         sumInfo.setText(bSumI);
         bImgI = intent.getExtras().getString("bookcoverUrl");
-        bookcoverInfo.setImageResource(Integer.parseInt(bImgI));
+        //bookcoverInfo.setImageResource(Integer.parseInt(bImgI));
 
 //        Intent bsIntent = getIntent();
 //        bsTitleI = bsIntent.getExtras().getString("bsTitle");
@@ -80,18 +80,12 @@ public class bookInformation extends AppCompatActivity {
                 String author = authorName.getText().toString();
                 String result = title + "/" + author;
 
-                try {
-                    jsonObject.put("title", title);
-                    jsonObject.put("author", author);
-                } catch(JSONException e) {
-                    e.printStackTrace();
-                }
-
                 bookPurchaseHttp hc = new bookPurchaseHttp(result);
                 hc.execute();
 
                 try {
                     String st = hc.get();
+                    System.out.println(st);
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(st));
                     startActivity(intent);
                 } catch (InterruptedException e) {

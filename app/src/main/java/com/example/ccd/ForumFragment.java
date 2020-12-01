@@ -29,7 +29,7 @@ public class ForumFragment extends Fragment {
     TableRow tableRow2;
     Button writeBtn;
     TableLayout forumTable;
-    TextView t1,t2,t3;
+    TextView t1,t2,t3, tt;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = (View)inflater.inflate(R.layout.fragment_forum, container, false);
@@ -48,16 +48,19 @@ public class ForumFragment extends Fragment {
             for(int i=0;i < leng;i++) {
                 JSONObject tmp = (JSONObject)jarr.get(i);
                 String memberID = (String)tmp.get("memberID");
-                String contents = (String)tmp.get("title");
-                String date = tmp.get("date").toString().substring(0,5);
+                final String title = (String)tmp.get("title");
+                final String content = (String)tmp.get("content");
+                String date = tmp.get("date").toString().substring(0,10);
 
                 t1 = new TextView(view.getContext());
                 t2 = new TextView(view.getContext());
                 t3 = new TextView(view.getContext());
+
                 t1.setText(memberID);
-                t2.setText(contents);
+                t2.setText(title);
                 t3.setText(date);
-                System.out.println(memberID + contents + date);
+
+                System.out.println(memberID + title + date);
                 TableRow trow = new TableRow(view.getContext());
                 trow.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                 trow.addView(t1);
@@ -69,12 +72,13 @@ public class ForumFragment extends Fragment {
                     public void onClick(View view) {
                         TableRow tablerow = (TableRow) view;
                         String memberID=((TextView) tablerow.getChildAt(0)).getText().toString();
-                        String contents=((TextView) tablerow.getChildAt(1)).getText().toString();
+                        String title=((TextView) tablerow.getChildAt(1)).getText().toString();
                         String date=((TextView) tablerow.getChildAt(2)).getText().toString();
 
                         Intent intent = new Intent(getActivity(), ForumContentLookup.class);
                         intent.putExtra("memberID", memberID);
-                        intent.putExtra("contents", contents);
+                        intent.putExtra("title", title);
+
                         intent.putExtra("date", date);
                         startActivity(intent);
                     }

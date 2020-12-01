@@ -67,8 +67,8 @@ public class bookPurchaseHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "172.30.1.2:8080/";
-            str = str + ip + "bookPurchase.jsp";
+            String ip = Value.ip;
+            str = str + ip + ":8080/bookPurchase.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -165,11 +165,5 @@ public class bookPurchaseHttp extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String aVoid) {
         super.onPostExecute(aVoid);
-
-        try {
-            Toast.makeText(context, jarr.getJSONObject(0).toString(), Toast.LENGTH_SHORT).show();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
     }
 }

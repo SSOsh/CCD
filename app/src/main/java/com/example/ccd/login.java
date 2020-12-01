@@ -52,7 +52,11 @@ public class login extends AppCompatActivity {
                     if(st[5].equals("success")) {
                         SharedPreferences sharedPreferences = getSharedPreferences("Value", MODE_PRIVATE);    // test 이름의 기본모드 설정
                         SharedPreferences.Editor editor= sharedPreferences.edit(); //sharedPreferences를 제어할 editor를 선언
-                        editor.putString("id", id.getText().toString()); // key,value 형식으로 저장
+                        editor.putString("id", st[0]); // key,value 형식으로 저장
+                        editor.putString("pw", st[1]); // key,value 형식으로 저장
+                        editor.putString("name", st[2]); // key,value 형식으로 저장
+                        editor.putString("address", st[3]); // key,value 형식으로 저장
+                        editor.putString("nickname", st[4]); // key,value 형식으로 저장
                         editor.commit();    //최종 커밋. 커밋을 해야 저장이 된다.
 
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);

@@ -52,6 +52,7 @@ public class bookInfoHttp extends AsyncTask<String, String, String> {
     }
 
     public bookInfoHttp(String n) {
+        result = "";
         arr = n.split("/");
     }
 
@@ -149,7 +150,7 @@ public class bookInfoHttp extends AsyncTask<String, String, String> {
                     summarize = obj.getString("summarize");
                     bookcoverUrl = obj.getString("bookcoverUrl");
 
-                    result += title + "/" + author + "/" + starRating + "/" + table + "/" + summarize + "/" + bookcoverUrl;
+                    result = title + "/" + author + "/" + starRating + "/" + table + "/" + summarize + "/" + bookcoverUrl;
                 }
             }
             // 접속 해제

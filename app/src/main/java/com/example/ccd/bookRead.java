@@ -13,6 +13,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.ccd.controller.bookInfoHttp;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -42,7 +44,8 @@ public class bookRead extends AppCompatActivity {
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mActivity.replaceFragment(hFragment);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -52,12 +55,6 @@ public class bookRead extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         Intent intent = getIntent();
-//        titleR = intent.getExtras().getString("bspTitle");
-//        bingTitle.setText(titleR);
-//        authorR = intent.getExtras().getString("bspAuthor");
-//        bingAuthor.setText(authorR);
-//        imgR = Integer.parseInt(intent.getExtras().getString("bspImg"));
-//        bingImg.setImageResource(imgR);
 
         gostatusBook = findViewById(R.id.gostatusBook);
         goDoneBook = findViewById(R.id.goDoneBook);
@@ -80,27 +77,34 @@ public class bookRead extends AppCompatActivity {
 
         mAdapter.notifyDataSetChanged();
 
-        initData();
+//        initData();
+//        bookInfoHttp bh = new bookInfoHttp();
+//        bh.execute();
+//        String str = bh.get();
+
+
+
+
     }
 
-    void initData() {
-        List<String> bsTitle = Arrays.asList(
-                "나미야 잡화점의 기적"
-        );
-        List<String> bsAuthor = Arrays.asList(
-                "히가시노 게이고"
-        );
-        List<Integer> bsImg = Arrays.asList(
-                R.drawable.namiya
-        );
-
-        for(int i=0; i<bsTitle.size(); i++) {
-            bookReadData data = new bookReadData();
-            data.setBingTitle(bsTitle.get(i));
-            data.setBingAuthor(bsAuthor.get(i));
-            data.setBingImg(bsImg.get(i));
-            mAdapter.addItem(data);
-        }
-        mAdapter.notifyDataSetChanged();
-    }
+//    void initData() {
+//        List<String> bsTitle = Arrays.asList(
+//                "나미야 잡화점의 기적"
+//        );
+//        List<String> bsAuthor = Arrays.asList(
+//                "히가시노 게이고"
+//        );
+//        List<Integer> bsImg = Arrays.asList(
+//                R.drawable.namiya
+//        );
+//
+//        for(int i=0; i<bsTitle.size(); i++) {
+//            bookReadData data = new bookReadData();
+//            data.setBingTitle(bsTitle.get(i));
+//            data.setBingAuthor(bsAuthor.get(i));
+//            data.setBingImg(bsImg.get(i));
+//            mAdapter.addItem(data);
+//        }
+//        mAdapter.notifyDataSetChanged();
+//    }
 }

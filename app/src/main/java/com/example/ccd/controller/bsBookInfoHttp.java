@@ -67,8 +67,8 @@ public class bsBookInfoHttp extends AsyncTask<String, String, String> {
         HttpURLConnection conn;
         try {
             String str = "http://";
-            String ip = "172.30.1.2:8080/";
-            str = str + ip + "bsBookInfo.jsp";
+            String ip = Value.ip;
+            str = str + ip + ":8080/bsBookInfo.jsp";
             System.out.println(str);
             URL url = new URL(str);
 //            // HTTP 접속 구하기
@@ -140,7 +140,6 @@ public class bsBookInfoHttp extends AsyncTask<String, String, String> {
 
                 //파싱
                 String title, author, starRating, table, summarize, bookcoverUrl;
-                String result="";
                 for(int i=0;i<jarr.length();i++) {
                     JSONObject obj = jarr.getJSONObject(i);
                     title = obj.getString("title");
@@ -150,7 +149,7 @@ public class bsBookInfoHttp extends AsyncTask<String, String, String> {
                     summarize = obj.getString("summarize");
                     bookcoverUrl = obj.getString("bookcoverUrl");
 
-                    result += title + "/" + author + "/" + starRating + "/" + table + "/" + summarize + "/" + bookcoverUrl;
+                    result = title + "/" + author + "/" + starRating + "/" + table + "/" + summarize + "/" + bookcoverUrl;
                 }
             }
             // 접속 해제
@@ -172,11 +171,5 @@ public class bsBookInfoHttp extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String aVoid) {
         super.onPostExecute(aVoid);
-
-        try {
-            Toast.makeText(context, jarr.getJSONObject(0).toString(), Toast.LENGTH_SHORT).show();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
     }
 }

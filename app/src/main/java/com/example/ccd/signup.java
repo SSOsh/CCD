@@ -58,6 +58,11 @@ public class signup extends AppCompatActivity {
                 String email = useremail.getText().toString();
                 String result = name + "/" + userID + "/" + password + "/" + nickname + "/" + email;
 
+                if(name.equals("") || userID.equals("") || password.equals("") || nickname.equals("") || email.equals("")) {
+                    Toast.makeText(getApplicationContext(), "정보를 모두 입력해주세요.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 signupHttp hc = new signupHttp(result);
                 hc.execute();
                 String ret = "";

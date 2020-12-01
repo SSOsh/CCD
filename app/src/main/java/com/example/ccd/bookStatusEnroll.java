@@ -3,6 +3,7 @@ package com.example.ccd;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,8 @@ import com.example.ccd.controller.statusEnrollHttp;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
 
 public class bookStatusEnroll extends AppCompatActivity {
     EditText enrollTitle, enrollAuthor;
@@ -39,21 +42,32 @@ public class bookStatusEnroll extends AppCompatActivity {
                 //json 변환
                 String title = enrollTitle.getText().toString();
                 String author = enrollAuthor.getText().toString();
-                String result = title + "/" + author;
+                SharedPreferences sharedPreferences= getSharedPreferences("Value", MODE_PRIVATE);    // test 이름의 기본모드 설정, 만약 test key값이 있다면 해당 값을 불러옴.
+                String id = sharedPreferences.getString("id","");
 
-                try {
-                    jsonObject.put("title", title);
-                    jsonObject.put("author", author);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                jsonObject.toString();
+                String result = title + "/" + author + "/" + id;
+
                 statusEnrollHttp hc = new statusEnrollHttp(result);
                 hc.execute();
 
-                //원래 화면으로
-                Toast.makeText(bookStatusEnroll.this, "독서 상황이 등록되었습니다.", Toast.LENGTH_SHORT).show();
-                finish();
+                try {
+                    String r = hc.get();
+
+                    if(r.equals(true)) {
+                        //원래 화면으로
+                        Toast.makeText(bookStatusEnroll.this, "독서 상황이 등록되었습니다.", Toast.LENGTH_SHORT).show();
+                        finish();
+                    }
+                    else {
+                        Toast.makeText(bookStatusEnroll.this, "독서 상황이 등록에 실패했습니다.", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+
             }
         });
 

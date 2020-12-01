@@ -1,6 +1,8 @@
 package com.example.ccd.controller;
 
-public class Value {
-    public static String ip = "172.30.1.4";
+import java.util.ArrayList;
 
+public class Value {
+    public static String ip = "192.168.0.8";
+    public static ArrayList<String> searchlist = new ArrayList<String>();
 }

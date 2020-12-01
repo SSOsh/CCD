@@ -69,9 +69,10 @@ public class postEnrollHttp extends AsyncTask<String, String, String> {
 
             try (OutputStream out = conn.getOutputStream()) {
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("title", arr[0]);
-                jsonObject.put("contents", arr[1]);
-                jsonObject.put("memberID", arr[2]);
+                jsonObject.put("memberID", arr[0]);
+                jsonObject.put("title", arr[1]);
+                jsonObject.put("contents", arr[2]);
+
 
                 out.write(jsonObject.toString().getBytes());
                 out.flush();
@@ -103,12 +104,14 @@ public class postEnrollHttp extends AsyncTask<String, String, String> {
                 responseStr = new String(byteData);
 
                 result = "";
+                String r;
                 JSONObject responseJSON = new JSONObject(responseStr);
                 //json데이터가 Map같은 형식일 때
                 jarr = responseJSON.getJSONArray("postEnroll");
                 for(int i=0;i<jarr.length();i++) {
                     JSONObject obj = jarr.getJSONObject(i);
-                    result = obj.getString("result");
+                    r = obj.getString("result");
+                    result = r;
                 }
             }
             // 접속 해제

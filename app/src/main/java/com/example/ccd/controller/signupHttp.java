@@ -127,7 +127,6 @@ public class signupHttp extends AsyncTask<String, String, String> {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        //로그인에서 id같은거 들고있어야하는데 어디에 들고 있을지 정해야함
         return result;
     }
 

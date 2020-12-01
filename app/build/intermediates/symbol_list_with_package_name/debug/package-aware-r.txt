@@ -1711,6 +1711,7 @@ drawable iconfinder_person
 drawable iconfinder_search
 drawable iconfinder_write
 drawable iconfinder_x
+drawable inch
 drawable like_off
 drawable like_on
 drawable like_toggle
@@ -1755,6 +1756,7 @@ drawable text_border
 drawable third
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable won
 drawable ws_action_item_background
 drawable ws_action_item_icon_background
 drawable ws_full_sad
@@ -1925,6 +1927,7 @@ id bsrTitle
 id butt
 id button
 id buttonPanel
+id cModifyBtn
 id cache_measures
 id cancel_action
 id cancel_button
@@ -2043,6 +2046,7 @@ id forumTitleText
 id fragment_container_view_tag
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id goBook
 id goBookInfoBtn
 id goDoneBook
@@ -2078,6 +2082,7 @@ id imageView5
 id imageView6
 id imageView7
 id imageView8
+id imageView9
 id info
 id invisible
 id italic
@@ -2096,6 +2101,7 @@ id linear
 id listMode
 id list_item
 id login
+id mCancleBtn
 id main_content
 id masked
 id media_actions
@@ -2110,6 +2116,7 @@ id message
 id middle
 id mini
 id modifyBtn
+id modifyComment
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2162,11 +2169,7 @@ id noticeTitleText
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id ntableContent1
-id ntableDate1
-id ntableId1
 id ntableRow1
-id ntableRow2
 id off
 id on
 id outline
@@ -2275,6 +2278,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id sumInfo
 id tabLayout
 id tabMode
 id table
@@ -2467,6 +2471,7 @@ layout activity_book_status_enroll
 layout activity_bs_result
 layout activity_bs_search
 layout activity_comment_enroll_popup
+layout activity_comment_modify_popup
 layout activity_forum_content_lookup
 layout activity_forum_enroll
 layout activity_login

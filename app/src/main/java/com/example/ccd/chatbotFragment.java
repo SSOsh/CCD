@@ -12,9 +12,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.ccd.controller.chatbotControl;
 import com.example.ccd.controller.chatbotHttp;
+import com.example.ccd.controller.chatbotOpen;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class chatbotFragment extends Fragment {
     EditText editText;
@@ -38,10 +41,30 @@ public class chatbotFragment extends Fragment {
         //1은 받는거 2는 주는거
         //이름, 내용, 종류
         ArrayList<chatbotData> data = new ArrayList<chatbotData>();
-        data.add(new chatbotData("안녕안녕 나는 주리야 헬륨가스 먹었더니 요로케돼찌~", 1));
-        data.add(new chatbotData("Gray", 2));
+        data.add(new chatbotData("챗봇말풍선", 1));
+        data.add(new chatbotData("send", 2));
         mAdapter = new chatbotWordListAdapter(data, view.getContext());
 
+//        chatbotOpen co = new chatbotOpen();
+//
+//        co.execute();
+//
+//
+//        String openstr = null;
+//        try {
+//            openstr = co.get();
+//        } catch (ExecutionException e) {
+//            e.printStackTrace();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//
+//        chatbotData d = new chatbotData();
+//        d.setContent(openstr);
+//        d.setViewType(1);
+//        mAdapter.addItem(d);
+//        mAdapter.notifyDataSetChanged();
+//
 
         chatbotRecyclerView.setAdapter(mAdapter);
         chatbotRecyclerView.setLayoutManager(manager);

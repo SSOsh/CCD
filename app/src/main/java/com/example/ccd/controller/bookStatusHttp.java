@@ -33,9 +33,6 @@ public class bookStatusHttp extends AsyncTask<String, String, String> {
     String strUrl;
     String[] arr;
 
-    int reint;
-    String result;
-    String result1;
     Context context;
     JSONObject jsonObj;
     JSONArray jarr;

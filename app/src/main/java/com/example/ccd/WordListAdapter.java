@@ -2,6 +2,7 @@ package com.example.ccd;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,12 +10,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.ccd.controller.bookDislikeHttp;
 import com.example.ccd.controller.bookInfoHttp;
 import com.example.ccd.controller.booklikeHttp;
@@ -25,11 +28,13 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
+import static android.content.Context.MODE_PRIVATE;
+
 public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordViewHolder> {
     private ArrayList<bookData> listData = new ArrayList<>();
     private ArrayList<likeData> likedata = new ArrayList<>();
     LayoutInflater mInflater;
-
+    String result;
     public WordListAdapter(Context context) {
         mInflater = LayoutInflater.from(context);
     }
@@ -48,8 +53,10 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
         holder.bookTitle.setText(listData.get(position).getBookTitle());
         holder.author.setText(listData.get(position).getAuthor());
         holder.starRating.setText(listData.get(position).getStarRating());
-        holder.bookCoverImg.setImageResource(listData.get(position).getBookCoverImg());
+//        holder.bookCoverImg.setImageResource(listData.get(position).getBookCoverImg());
+//        Glide.with().load(listData.get(position).getBookCoverImg()).into(holder.bookCoverImg);
     }
+
 
     @Override
     public int getItemCount() {
@@ -79,6 +86,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             goBookInfoBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    result = "";
                     //json 변환
                     JSONObject jsonObject = new JSONObject();
 
@@ -86,19 +94,11 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
                     String writer = author.getText().toString();
                     String result = title + "/" + writer;
 
-                    try {
-                        jsonObject.put("title", title);
-                        jsonObject.put("writer", writer);
-                        //memberID 추가
-                    } catch(JSONException e) {
-                        e.printStackTrace();
-                    }
-
                     bookInfoHttp hc = new bookInfoHttp(result);
                     hc.execute();
 
                     try {
-                        System.out.println(hc.get().toString());
+                        System.out.println(hc.get());
                         String arr[] = hc.get().split("/");
 
                         Context context = view.getContext();
@@ -124,42 +124,50 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
                 @Override
                 public void onClick(View view) {
                     if(like_toggle.isChecked()) {
-                        //json 변환
-                        JSONObject jso = new JSONObject();
-
                         String title = bookTitle.getText().toString();
                         String writer = author.getText().toString();
-                        //memberID 추가
-                        String result = title + "/" + writer;
+                        SharedPreferences sharedPreferences= view.getContext().getSharedPreferences("Value", MODE_PRIVATE);    // test 이름의 기본모드 설정, 만약 test key값이 있다면 해당 값을 불러옴.
+                        String memberID = sharedPreferences.getString("id","");
 
+                        String value = title + "/" + writer + "/" + memberID;
+                        booklikeHttp hc = new booklikeHttp(value);
+                        hc.execute();
                         try {
-                            jso.put("title", title);
-                            jso.put("writer", writer);
-                            //memberID 추가
-                        } catch(JSONException e) {
+                            result = hc.get();
+                        } catch (ExecutionException e) {
+                            e.printStackTrace();
+                        } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
 
-                        booklikeHttp hc = new booklikeHttp(result);
-                        hc.execute();
+                        if(result.equals("success")) {
+                            Toast.makeText(view.getContext(), "좋아요 등록되었습니다.", Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(view.getContext(), "좋아요 등록실패!ㅜ", Toast.LENGTH_SHORT).show();
+                        }
                     }
                     else {
-                        //json 변환
-                        JSONObject json = new JSONObject();
-
                         String title = bookTitle.getText().toString();
                         String writer = author.getText().toString();
-                        String result = title + "/" + writer;
+                        SharedPreferences sharedPreferences= view.getContext().getSharedPreferences("Value", MODE_PRIVATE);    // test 이름의 기본모드 설정, 만약 test key값이 있다면 해당 값을 불러옴.
+                        String memberID = sharedPreferences.getString("id","");
+                        String value = title + "/" + writer + "/" + memberID;
 
+                        bookDislikeHttp hc = new bookDislikeHttp(value);
+                        hc.execute();
                         try {
-                            json.put("title", title);
-                            json.put("writer", writer);
-                        } catch(JSONException e) {
+                            result = hc.get();
+                        } catch (ExecutionException e) {
+                            e.printStackTrace();
+                        } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
 
-                        bookDislikeHttp hc = new bookDislikeHttp(result);
-                        hc.execute();
+                        if(result.equals("success")) {
+                            Toast.makeText(view.getContext(), "좋아요 삭제되었습니다.", Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(view.getContext(), "좋아요 삭제실패!ㅜ", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 }
             });
@@ -171,7 +179,8 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             bookTitle.setText(data.getBookTitle());
             author.setText(data.getAuthor());
             starRating.setText(data.getStarRating());
-            bookCoverImg.setImageResource(data.getBookCoverImg());
+//            bookCoverImg.setImageResource(data.getBookCoverImg());
+            Glide.with(mInflater.getContext()).load(data.getBookCoverImg()).into(bookCoverImg);
         }
     }
 }

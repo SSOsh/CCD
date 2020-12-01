@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.bumptech.glide.Glide;
 import com.example.ccd.controller.disLikeHttp;
 import com.example.ccd.controller.likeHttp;
 
@@ -66,8 +67,6 @@ public class likeWordListAdapter extends RecyclerView.Adapter<likeWordListAdapte
             like_toggle = itemView.findViewById(R.id.like_toggle);
 
             like_toggle.setOnClickListener(new View.OnClickListener() {
-
-
                 @Override
                 public void onClick(View view) {
                     String bname = bookName.getText().toString();
@@ -89,7 +88,7 @@ public class likeWordListAdapter extends RecyclerView.Adapter<likeWordListAdapte
         void onBind(likeData data) {
             bookName.setText(data.getBookName());
             writer.setText(data.getWriter());
-            bookImage.setImageResource(data.getBook_image());
+            Glide.with(itemView.getContext()).load(data.getBook_image()).into(bookImage);
         }
     }
 }
